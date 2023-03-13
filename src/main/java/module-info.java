@@ -10,4 +10,5 @@ module fr.til.projetfilrouge.mailspamdetectorproject {
     exports fr.til.projetfilrouge.mailspamdetectorproject.Tests;
     exports fr.til.projetfilrouge.mailspamdetectorproject.Model;
     opens fr.til.projetfilrouge.mailspamdetectorproject.Model to javafx.fxml;
+    exports fr.til.projetfilrouge.mailspamdetectorproject.Controller;
 }
