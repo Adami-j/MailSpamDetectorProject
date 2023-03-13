@@ -15,4 +15,6 @@
 .idea\libraries\Maven__org_openjfx_javafx_graphics_win_18_ea_6.xml
 .idea\libraries\Maven__org_openjfx_javafx_graphics_win_18_ea_6.xml
 MailSpamDetectorProject.iml
-.idea\compiler.xml
+.idea\compiler.
+
+*.xml
