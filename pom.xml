@@ -62,6 +62,12 @@
             <artifactId>javafx-graphics</artifactId>
             <version>18-ea+6</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
