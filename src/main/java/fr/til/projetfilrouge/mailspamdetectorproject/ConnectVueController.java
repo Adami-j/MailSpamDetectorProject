@@ -1,19 +1,28 @@
-package fr.til.projetfilrouge.mailspamdetectorproject;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
 
+
+package fr.til.projetfilrouge.mailspamdetectorproject;
+
+        import javafx.event.ActionEvent;
+        import javafx.fxml.FXML;
+        import javafx.scene.control.Button;
+        import javafx.scene.control.PasswordField;
+        import javafx.scene.control.TextField;
 /**
  * la classe Connect vue est le controleur du fxml connect-vue
  */
-public class ConnectVue {
+public class ConnectVueController {
 
     @FXML
-    private TextField usernameField;
+    public TextField usernameField;
 
     @FXML
-    private PasswordField passwordField;
+    public PasswordField passwordField;
+
+    @FXML
+    Button buttonReset;
+
+    @FXML
+    Button buttonConnection;
 
 
     /**
@@ -22,19 +31,25 @@ public class ConnectVue {
      */
     @FXML
     private void initialize() {
-
-        // Ajoutez ici tout ce qui doit être initialisé au lancement de la vue
+        /*try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("connect-vue.fxml"));
+            loader.setController(this);
+            AnchorPane pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
     }
     /**
      * Réinitialise les champs d'identification.
      * Cette méthode est appelée lorsque l'utilisateur appuie sur le bouton "Réinitialiser".
      */
     @FXML
-    private void resetFields() {
+    public  void resetFields() {
         System.out.println("reset");
         usernameField.setText("");
         passwordField.setText("");
     }
+
     /**
      * Se connecte à l'application en utilisant les identifiants entrés par l'utilisateur.
      * Cette méthode est appelée lorsque l'utilisateur appuie sur le bouton "Se connecter".
@@ -45,4 +60,3 @@ public class ConnectVue {
         // Ajoutez ici la logique pour se connecter
     }
 }
-
