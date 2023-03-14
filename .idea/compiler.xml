@@ -13,4 +13,9 @@
       <module name="MailSpamDetectorProject" target="0" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MailSpamDetectorProject" options="" />
+    </option>
+  </component>
 </project>
