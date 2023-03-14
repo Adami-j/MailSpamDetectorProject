@@ -22,7 +22,7 @@ public class ConnexionController {
      * @author Julien ADAMI
      * @param userModel utilisateur qui souhaite se connecter
      */
-    private ConnexionController(UserModel userModel) {
+    private ConnexionController(UserModel userModel) throws MessagingException {
 
         Properties properties = new Properties();
         this.userModel = userModel;
@@ -31,13 +31,18 @@ public class ConnexionController {
         properties.setProperty("mail.imap.port", "993");
         properties.setProperty("mail.imap.ssl.enable", "true");
 
+
         //création de l'authentification, en utilisant les paramètres de l'utilisateur
         Authenticator authentificator = new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(userModel.getLogin(), userModel.getPassword());
             }
         };
+
         session = Session.getInstance(properties,authentificator);
+        Store store = session.getStore();
+        store.connect(userModel.getLogin(), userModel.getPassword());
+        System.out.println(store.isConnected());
 
     }
 
@@ -49,7 +54,7 @@ public class ConnexionController {
      * @param userModel
      * @return ConnexionController l'instance synchronized
      */
-    public static synchronized ConnexionController getInstance(UserModel userModel) {
+    public static synchronized ConnexionController getInstance(UserModel userModel) throws MessagingException {
         if(connexionInstance==null){
             connexionInstance = new ConnexionController(userModel);
         }
