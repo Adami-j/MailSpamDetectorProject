@@ -2,11 +2,17 @@
 
 package fr.til.projetfilrouge.mailspamdetectorproject.View;
 
+        import fr.til.projetfilrouge.mailspamdetectorproject.Controller.ConnexionController;
+        import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModel;
         import javafx.event.ActionEvent;
         import javafx.fxml.FXML;
+        import javafx.scene.control.Alert;
         import javafx.scene.control.Button;
         import javafx.scene.control.PasswordField;
         import javafx.scene.control.TextField;
+
+        import javax.mail.MessagingException;
+
 /**
  * la classe Connect vue est le controleur du fxml connect-vue
  */
@@ -55,8 +61,23 @@ public class ConnectVueController {
      * Cette méthode est appelée lorsque l'utilisateur appuie sur le bouton "Se connecter".
      */
     @FXML
-    private void connection() {
-        System.out.println("connection");
-        // Ajoutez ici la logique pour se connecter
+    private void connection()  {
+
+        String login = usernameField.getText();
+        String password = passwordField.getText();
+        System.out.println(login+password);
+        UserModel userModel = UserModel.getInstance();
+        userModel.setLogin(login);
+        userModel.setPassword(password);
+        try {
+            ConnexionController connexionController = ConnexionController.getInstance(userModel);
+        } catch (MessagingException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText(String.valueOf(e));
+            alert.show();
+        }
+
     }
+
+
 }
