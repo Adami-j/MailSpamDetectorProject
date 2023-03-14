@@ -3,7 +3,13 @@ module fr.til.projetfilrouge.mailspamdetectorproject {
     requires javafx.fxml;
 
     requires org.kordamp.bootstrapfx.core;
+    requires junit;
+    requires java.mail;
 
     opens fr.til.projetfilrouge.mailspamdetectorproject to javafx.fxml;
     exports fr.til.projetfilrouge.mailspamdetectorproject;
+    exports fr.til.projetfilrouge.mailspamdetectorproject.Tests;
+    exports fr.til.projetfilrouge.mailspamdetectorproject.Model;
+    opens fr.til.projetfilrouge.mailspamdetectorproject.Model to javafx.fxml;
+    exports fr.til.projetfilrouge.mailspamdetectorproject.Controller;
 }
