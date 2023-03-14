@@ -4,7 +4,6 @@ package fr.til.projetfilrouge.mailspamdetectorproject.Tests;
 import org.junit.Test;
 
 import java.util.HashMap;
-import java.util.Optional;
 
 import fr.til.projetfilrouge.mailspamdetectorproject.utils.readerCSV;
 
