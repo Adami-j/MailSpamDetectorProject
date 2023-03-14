@@ -1,6 +1,6 @@
 
 
-package fr.til.projetfilrouge.mailspamdetectorproject;
+package fr.til.projetfilrouge.mailspamdetectorproject.View;
 
         import javafx.event.ActionEvent;
         import javafx.fxml.FXML;

@@ -1,6 +1,5 @@
-package fr.til.projetfilrouge.mailspamdetectorproject.Tests;
+package fr.til.projetfilrouge.mailspamdetectorproject.Test;
 
-import fr.til.projetfilrouge.mailspamdetectorproject.Exceptions.UserExceptions;
 import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModel;
 import org.junit.Test;
 

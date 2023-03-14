@@ -1,11 +1,11 @@
-package fr.til.projetfilrouge.mailspamdetectorproject.Tests;
+package fr.til.projetfilrouge.mailspamdetectorproject.Test;
 
 
 import org.junit.Test;
 
 import java.util.HashMap;
 
-import fr.til.projetfilrouge.mailspamdetectorproject.utils.readerCSV;
+import fr.til.projetfilrouge.mailspamdetectorproject.Util.readerCSV;
 
 import static org.junit.Assert.assertEquals;
 

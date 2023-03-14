@@ -1,4 +1,4 @@
-package fr.til.projetfilrouge.mailspamdetectorproject.utils;
+package fr.til.projetfilrouge.mailspamdetectorproject.Util;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
