@@ -6,10 +6,13 @@ package fr.til.projetfilrouge.mailspamdetectorproject.View;
         import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModel;
         import javafx.event.ActionEvent;
         import javafx.fxml.FXML;
+        import javafx.scene.Scene;
         import javafx.scene.control.Alert;
         import javafx.scene.control.Button;
         import javafx.scene.control.PasswordField;
         import javafx.scene.control.TextField;
+        import javafx.scene.layout.StackPane;
+        import javafx.stage.Stage;
 
         import javax.mail.MessagingException;
 
@@ -30,6 +33,7 @@ public class ConnectVueController {
     @FXML
     Button buttonConnection;
 
+    private Stage primaryStage;
 
     /**
      * Initialise la vue de connexion.
@@ -59,6 +63,7 @@ public class ConnectVueController {
     /**
      * Se connecte à l'application en utilisant les identifiants entrés par l'utilisateur.
      * Cette méthode est appelée lorsque l'utilisateur appuie sur le bouton "Se connecter".
+     * @author Julien ADAMI
      */
     @FXML
     private void connection()  {
@@ -71,6 +76,7 @@ public class ConnectVueController {
         userModel.setPassword(password);
         try {
             ConnexionController connexionController = ConnexionController.getInstance(userModel);
+            ouverturePageVisualisationMail();
         } catch (MessagingException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(String.valueOf(e));
@@ -79,5 +85,22 @@ public class ConnectVueController {
 
     }
 
+    /**
+     * @author Julien ADAMI
+     * Méthode qui crée une nouvelle fenêtre pour afficher les mails dans un premier temps
+     * puis qui les tries en 3 catégories : spams, non spams, suspects
+     * et qui ferme la fenêtre de connexion
+     */
+    public void ouverturePageVisualisationMail(){
+        Stage secondStage = new Stage();
+        StackPane root = new StackPane();
+        Scene scene = new Scene(root, 300, 250);
+        secondStage.setScene(scene);
+        secondStage.show();
+        this.primaryStage.close();
+    }
 
+    public void setPrimaryStage(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+    }
 }
