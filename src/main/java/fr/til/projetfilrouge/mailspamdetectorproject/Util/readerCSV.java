@@ -9,6 +9,7 @@ import java.util.HashMap;
 public class readerCSV {
 
     /**
+     * @author MateoIsabey
      * récupere la fonction un HashMap de tout les mots du CSV qui contient les termes pour la classification bayésienne
      * @param filePath
      * @return HashMap de String
