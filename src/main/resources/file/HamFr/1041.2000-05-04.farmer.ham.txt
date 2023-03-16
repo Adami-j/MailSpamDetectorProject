@@ -1,0 +1,16 @@
+Objet: nouveau compteur hpl vidor city gate check meter 098.8746.
+Fyi.
+Le compteur de ligne de conduite de houston ci-dessous a été mis en place dans des installations mondiales.
+Compteur: 098.8746.
+Numéro d’installation: 513445.
+Nom: vidor city gate check.
+Type: check.
+Système: 765 pipeline texoma.
+Zone tarifaire: 40 vidor.
+Zone commerciale: 8 texas-est.
+Direction du débit: livraison.
+Latéral:
+Ordre de travail:
+Remarque: le compteur 0988746 est le compteur de contrôle jusqu’à 098.0413.
+Veuillez m’appeler à l’ext 3.3446 si vous avez des questions.
+Donna.

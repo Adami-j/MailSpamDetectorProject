@@ -1,0 +1,11 @@
+Sujet: nouvelle fonctionnalité enrononline.
+Plusieurs changements ont été apportés au gestionnaire de stack et au site web ces changements sont décrits ci-dessous et seront visibles par tous à compter du lundi 3 septembre 2001.
+Changements apportés au gestionnaire de pile.
+Activez inactivation stack cette fonctionnalité permet au négociateur de tirer les prix d’un produit s du site web sans suspendre le produit si le haut de la fonctionnalité de commande limite de stack est activé pour un produit particulier ce qui devrait être utilisé pour tirer les prix de stack du site web sans tirer le produit entier, donc s’il y a haut des commandes limites de stack contre le produit, ils resteront visibles et transactables sur le site web.
+Si une pile de produit s est inactivée, la police pour ce produit sera grillée dans stack manager si la pile est active, elle apparaîtra en caractères noirs.
+Pour utiliser cette fonction sélectionnez le produit à droite cliquez et choisissez inactiver stack lorsque vous êtes prêt à réactiver vos prix sélectionnez le même produit à droite cliquez à nouveau et choisissez activez stack il y a également des icônes sur la barre d’outils au haut de votre écran qui activeront inactiver la pile du produit mis en évidence voir écran shot ci-dessous pour les icônes.
+Changements aux propriétés du produit actuellement lorsque des modifications sont apportées à certaines propriétés à l’écran propriétés du produit le produit sera suspendu et retiré du site web maintenant au lieu d’être suspendu la cheminée du produit s deviendra inactive une fois que les changements ont été faits et sauvegardés aux propriétés d’un produit, cliquez simplement sur l’icône activer stack tel que discuté ci-dessus.
+Changement du site web.
+Restrictions sur le haut des commandes de cheminée si le haut des commandes limites de cheminée est autorisé sur un produit, mais le négociateur ne montre pas à la fois une soumission et des commandes limites d’offre ne pourront pas être placées sur ce produit.
+Si vous avez des questions, veuillez m’appeler à 31787 merci.
+Savita.

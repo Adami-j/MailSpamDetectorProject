@@ -1,0 +1,12 @@
+Sujet: annonce de l’accès web outlook aux utilisateurs de houston outlook.
+Attention: les utilisateurs de outlook basés à houston.
+L" équipe de messagerie mondiale est fière d’annoncer que, à compter du lundi 16 juillet, les employés d’enron basés à houston qui ont été migrés à outlook pourront accéder en toute sécurité à leur e-mail enron de n’importe où sur le web, ce qui signifie que si vous pouvez accéder à internet, vous pouvez accéder à votre e-mail enron avec outlook web access owa sans avoir à téléphoner au réseau enron s veuillez noter que cela n’est pas disponible pour les utilisateurs encore sur lotus notes, mais sera disponible une fois qu’ils seront migrés à outlook.
+Une fois sur le type internet mail enron com dans votre fenêtre d’adresse du navigateur et fournissez vos titres de connexion du réseau enron en tant que nom d’utilisateur et mot de passe, par exemple:
+Nom d’utilisateur: jdoe 4.
+Mot de passe:
+Une fois que vous vous connectez à outlook web access ouvre votre enron email mailbox outlook web access owa vous permet d’envoyer et de recevoir mail exécuter des tâches calendrier et de gérer votre courrier et vos contacts ainsi que d’accéder à vos dossiers de mailbox à ce moment-là, les dossiers publics ne sont pas accessibles via owa veuillez garder à l’esprit que outlook web access est une version de navigateur de ce que vous pourriez utiliser dans le bureau, de sorte que la fonctionnalité peut être légèrement différente et certaines fonctionnalités de outlook 2000 peuvent ne pas être disponibles en tout, en outre owa n’est supporté qu’en utilisant internet explorer 5 x seulement et n’est pas supporté avec netscape.
+Outlook web access is the standard email package for connecting to your enron mail from home whether you are using an enron issued home pc a internet connection with your personal home pc or your clickathome pc we will not support the use of the full outlook installation for home use.
+Outlook web access for remote locations and european apac enron sites are currently addressed and will be available soon at this time owa is available only if your mailbox residing on a houston mail server.
+Si vous avez des questions, veuillez appeler:
+Centre de résolution à x 31411 ou.
+Centre de solutions ets à x 54745.

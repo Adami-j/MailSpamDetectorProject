@@ -1,0 +1,27 @@
+Sujet: nouveau gestionnaire de stack.
+Il y a une nouvelle version de stack manager qui est en cours de publication ce soir.
+Pour utilisation le lundi matin.
+Changements.
+1 inactiver enfants suspendus nouvel article de menu disponible par.
+En cliquant droit sur un produit parent, il modifiera tous les produits pour enfants.
+Le parent mis en évidence de la suspension à l’inactive note que cela sera.
+Appliquée uniquement au produit que vous mettez en évidence, vous montrerez également disponible.
+Lorsque l’on met l’accent sur les produits qui ne sont pas parents, mais qui n’auront aucun effet.
+2 la liste des transactions a été modifiée pour afficher correctement seulement les transactions.
+Les transactions terminées le jour civile le problème a touché l’australie.
+Et singapour.
+3 une diffusion constante qui est changée de la page d’avant de la pile.
+Le gestionnaire restera le même changement pour ce produit que la diffusion persistera même.
+Si des transactions se produisent.
+Contexte.
+Les produits pour enfants suspendus continuent de mettre à jour leurs prix à mesure que le prix.
+Des changements de parents les produits pour enfants inactifs n’ont pas leurs prix.
+Mise à jour du processus de mise à jour des prix ralentit le traitement enrononline et la pile.
+Réponse du gestionnaire de façon à ce qu’il soit avantageux de s’assurer que tous les produits non actifs sont.
+Dans un état inactif.
+Si vous avez des questions sur ce qui précède, veuillez communiquer avec l’appel enrononline.
+Centre à:
+Amérique du nord: 713.853.4357 aide.
+Asie et australie: 61.2922929.2300.
+Europe et autres régions: 44.020.7783.7783.
+Dave.

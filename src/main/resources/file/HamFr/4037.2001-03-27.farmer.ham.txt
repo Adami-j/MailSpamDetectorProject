@@ -1,0 +1,8 @@
+Sujet: windows 2000 et outlook.
+Nous allons bientôt migrer vers windows 2000 et outlook le bureau de texas est prévu pour le mardi 10 avril, on m’a demandé de transmettre les renseignements suivants à mon groupe:
+1 vous recevrez des courriels de l’équipe de migration gem s’il vous plaît assurez-vous de ne l’ouvrir que de votre propre bureau et pas à distance cela est très important ces messages expliqueront le processus de migration et ce que vous devez faire pour assurer une migration réussie.
+2 en raison de nouvelles limites d’espace sur votre boîte de messagerie, vous êtes conseillé de nettoyer votre boîte de messagerie de notes de vieux messages inutiles avant la migration avec outlook vous serez limité à une taille d’une boîte de messagerie de 100 mb outlook vous enverrez un avertissement une fois que vous atteindrez 75 mb pour vous informer que vous êtes près de votre limite de boîte de messagerie une fois que vous atteindrez 100 mb vous serez empêchés d’envoyer un courriel, mais vous serez toujours en mesure de recevoir des messages internes et externes vous aurez alors besoin de réduire la taille de votre boîte de messagerie en supprimant les anciens attachments de sauvegarde de courrier à un lecteur local etc avant que vous puissiez envoyer un courriel à nouveau.
+3 à partir du jour de la migration seulement 30 jours de vieux courrier seront migrés de votre boîte de messagerie, ce qui inclut le courrier dans votre boîte de messagerie et d’autres éléments du calendrier des dossiers datant d’une année à compter du jour de la migration sera migré.
+4 tout le monde aura une seule vue de lecture des notes jusqu’à ce que la transition soit terminée, vous serez en mesure de copier la pâte.
+Merci.
+Laura.

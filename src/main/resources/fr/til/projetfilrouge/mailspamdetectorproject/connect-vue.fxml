@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="fr.til.projetfilrouge.mailspamdetectorproject.View.ConnectVueController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.til.projetfilrouge.mailspamdetectorproject.View.ConnectVueController">
 
     <children>
         <Label fx:id="labelUsernameField" layoutX="14.0" layoutY="18.0" text="Nom d'utilisateur" />
         <TextField fx:id="usernameField" layoutX="14.0" layoutY="41.0" prefHeight="25.0" prefWidth="272.0" promptText="Entrez votre nom d'utilisateur ici" />
         <Label fx:id="labelPasswordField" layoutX="14.0" layoutY="76.0" text="Mot de passe" />
         <PasswordField fx:id="passwordField" layoutX="14.0" layoutY="99.0" prefHeight="25.0" prefWidth="272.0" promptText="Entrez votre mot de passe ici" />
-        <Button fx:id="buttonReset" onAction="#resetFields" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" text="Réinitialiser"  styleClass="btn btn-secondary"/>
-        <Button fx:id="buttonConnection" onAction="#connection"  layoutX="227.0" layoutY="148.0" mnemonicParsing="false" text="Se connecter" />
+        <Button fx:id="buttonReset" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" onAction="#resetFields" styleClass="btn btn-secondary" text="Réinitialiser" />
+        <Button fx:id="buttonConnection" layoutX="227.0" layoutY="148.0" mnemonicParsing="false" onAction="#connection" text="Se connecter" />
+        <Label fx:id="labelOu" layoutX="14.0" layoutY="217.0" text="Ou saisir le fichier contenant les mails" />
+      <Button layoutX="14.0" layoutY="262.0" mnemonicParsing="false" onAction="#selectFile" text="Parcourir" />
+      <Label fx:id="selectedDirectoryLabel" layoutX="32.0" layoutY="299.0" />
+
     </children>
 
 </AnchorPane>

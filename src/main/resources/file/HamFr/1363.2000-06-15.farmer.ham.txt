@@ -1,0 +1,11 @@
+Objet: offres de bureau à bureau.
+Au milieu de juillet, sitara modifiera la logique sur le bureau aux offres de bureau pour post.
+Le volume associé au vendeur de vente du côté de l’accord de sitara.
+À l’heure actuelle, le volume sur le côté acheteur de la réception est affiché ceci.
+Le changement sera mis en œuvre afin de coïncider avec la logique actuelle.
+Utilisé dans sap ce changement devrait aider à éviter les déséquilibres interentreprises.
+Veuillez noter que ce changement n’aura pour effet que les offres de bureau.
+La logique des contrats d’utilisation des transports demeurera à mesure qu’elle est actuellement livrée.
+Point vers des postes à la convention de sitara.
+Si vous avez des questions, veuillez m’appeler à x 39222.
+Chao.

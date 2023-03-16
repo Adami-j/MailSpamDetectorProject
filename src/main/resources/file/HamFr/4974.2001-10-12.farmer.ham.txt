@@ -1,0 +1,43 @@
+Sujet: fw: liste unifiée d’exception.
+Tous:
+À partir de la réponse de matt s, il semble que vous voudriez peut-être spécifier le personnel d’exception pour 8.12.12 thru 4:00 et 4 thru 6 heures normales d’affaires et pas de fin de mois fériés ou de longs week-ends.
+Rp.
+Message original.
+De: peine matt.
+Envoyé: vendredi 12.2001.1:03 pm.
+À: pinion richard.
+Objet: re: unifier la liste des exceptions.
+Oui vous êtes correct quand nous surveillons chien nous ferons probablement faire vm et les règlements et non pas pm mais dans l’après-midi s’ils ont besoin de paiements hors de la porte pm va le faire de deux façons donc si vous m’envoyez qui doit être dans le système peu importe ce qui pourrait aider.
+Vous êtes correct 8.12 est essentiel pour la logistique et après cela il est tout à fait supposé.
+Message original.
+De: pinion richard.
+Envoyé: vendredi 12.2001.11:38 h.
+À: peine matt.
+Sujet: fw: liste unifiée d’exception.
+Sur la base de la réponse de victor s, je pense qu’il y a une certaine confusion il y a en fait plusieurs périodes de temps critique selon le groupe et le temps de jour peut-être pour éliminer la confusion que vous pourriez préciser quelle période de temps vous allez à watchdog je l’ai interprété comme signifiant la période 8.12 am, mais victor pensait l’après-midi selon le moment il pourrait y avoir différentes personnes qui devraient être chassées.
+Rp.
+Message original.
+De: lamadrid victor.
+Envoyé: vendredi 12.2001.11:00 am.
+À: sullivan patti pena matt.
+Cc: warner john hall bob m rao ramesh sengupta jayanta nguyen ben melethil anwar baxter bryce bussell l kathryn dawes cheryl greif donna hall bob m cure kevin jaquet tammy kinsey lisa lakho shahnaz machleit shirley mcclure mark olinger kimberly s pinion richard reeves leslie smith george f staab theresa superty robert wynne rita.
+Objet: re: unifier la liste des exceptions.
+Les utilisateurs critiques sur le bureau est utilisant path manager seront meredith homco clarissa garcia christina sanchez et victor lamadrid si vous pouviez nous avertir de quand y tous invoquent watchdog pour lancer la logistique qui serait un grand merci.
+Message original.
+De: sullivan patti.
+Envoyé: vendredi 12.2001.9:42 h.
+À: peine matt.
+Cc: warner john hall bob m rao ramesh sengupta jayanta nguyen ben melethil anwar baxter bryce bussell l kathryn dawes cheryl greif donna hall bob m cure kevin jaquet tammy kinsey lisa lakho shahnaz lamadrid victor machleit shirley mcclure mark olinger kimberly s pinion richard reeves leslie smith george f staab theresa superty robert wynne rita.
+Objet: re: unifier la liste des exceptions.
+Le west desk critical users will all use path manager les utilisateurs seront shannon groenewold daniel lisk suzanne christiansen corey wilkes jackie adams shelly mendel stacey brewer walt spiegelhauer et débuteront la semaine prochaine joshua blair.
+Message original.
+De: peine matt.
+Envoyé: jeudi 11.2001.8:37 h.
+To: baxter bryce bussell l kathryn dawes cheryl greif donna hall bob m cure kevin jaquet tammy kinsey lisa lakho shahnaz lamadrid victor machleit shirley mcclure mark olinger kimberly s pinion richard reeves leslie smith george f staab theresa sullivan patti superty robert wynne rita.
+Cc: warner john hall bob m rao ramesh sengupta jayanta nguyen ben melethil anwar.
+Sujet: unifier la liste des exceptions.
+Aller de l’avant à titre de mesure de précaution nous commencerons à bloquer les utilisateurs du système si nécessaire, nous utiliserons notre application de surveillance pour lancer ce processus, nous ne le ferons que comme dernier recours et vous aviserons que nous ferons cela nos raisons pour ce faire sont principalement de veiller à ce que les ressources essentielles du système soient fournies aux utilisateurs qui en ont le plus besoin.
+La vieille liste que nous avions de sybase n’existe plus je ai besoin de votre aide pour mettre sur pied une nouvelle liste veuillez fournir la liste des personnes qui sont des utilisateurs absolument critiques qui doivent être sur le système évidemment la situation n’est pas corrigée si tout le monde est un utilisateur d’exception:
+Veuillez fournir le nom de l’utilisateur et l’application dont ils ont besoin i e volume management settlements path manager.
+Plus tôt que je le fais, plus nous pourrons le mettre en œuvre.
+Merci.

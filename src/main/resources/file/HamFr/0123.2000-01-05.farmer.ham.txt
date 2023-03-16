@@ -1,0 +1,6 @@
+Sujet: erreur de retour du pont.
+Compteur 980068 a une erreur de retour de pont pour la production 9.99 ce compteur est.
+Lié à la transaction 76365 qui a commencé le 416.99 et s’est achevée le 430.99.
+Veuillez me faire savoir quel contrat devrait être utilisé pour ce compteur pour 9.99 j’ai besoin.
+Pour que cette erreur soit éliminée d’ici jeudi.
+Merci.

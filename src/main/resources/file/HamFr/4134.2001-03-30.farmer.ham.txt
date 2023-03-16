@@ -1,0 +1,4 @@
+Sujet: changement d’adresse web ehronline.
+Ce message n’est destiné qu’aux utilisateurs d’ehronline.
+En raison d’un changement récent à ehronline, l’adresse url aka web pour accéder à ehronline doit être modifiée sur votre ordinateur le changement implique d’ajouter la lettre s à la référence http dans l’url l’url pour accéder à ehronline devrait être: https: ehronline enron com.
+Ce changement devrait être fait par ceux qui ont ajouté l’url comme un préféré sur le navigateur.

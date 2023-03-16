@@ -1,0 +1,5 @@
+Objet: txu fuel co nom s pour 2.21.01 révisé.
+Révisé pour afficher le même jour l’achat de 20000 mmbtu à oasis sealy pour la journée du gaz.
+De 2.20.01.
+Voir le fichier ci-joint: hplno 221 xls.
+Hplno 221 xls.

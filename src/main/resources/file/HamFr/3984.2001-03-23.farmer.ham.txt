@@ -1,0 +1,9 @@
+Sujet: phillips 4.01.
+Carlos.
+J’ai créé le contrat suivant pour la production 4.01:
+Transaction: 689508.
+Compteur: 98.6782.
+Volume des transactions: 5.000.
+Vol prévu: 4.200.
+Prix: ifhsc moins 0.05.
+Bob bob.
