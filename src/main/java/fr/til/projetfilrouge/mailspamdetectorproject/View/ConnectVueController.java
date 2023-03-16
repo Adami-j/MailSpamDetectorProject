@@ -11,14 +11,13 @@ package fr.til.projetfilrouge.mailspamdetectorproject.View;
         import javafx.fxml.FXMLLoader;
         import javafx.scene.Parent;
         import javafx.scene.Scene;
-        import javafx.scene.control.Alert;
-        import javafx.scene.control.Button;
-        import javafx.scene.control.PasswordField;
-        import javafx.scene.control.TextField;
+        import javafx.scene.control.*;
         import javafx.scene.layout.StackPane;
+        import javafx.stage.DirectoryChooser;
         import javafx.stage.Stage;
 
         import javax.mail.MessagingException;
+        import java.io.File;
         import java.io.IOException;
 
 /**
@@ -37,6 +36,9 @@ public class ConnectVueController {
 
     @FXML
     Button buttonConnection;
+
+    @FXML
+    private Label selectedDirectoryLabel;
 
     private Stage primaryStage;
 
@@ -115,5 +117,13 @@ public class ConnectVueController {
 
     public void setPrimaryStage(Stage primaryStage) {
         this.primaryStage = primaryStage;
+    }
+
+    public void selectFile(ActionEvent actionEvent) {
+        DirectoryChooser directoryChooser = new DirectoryChooser();
+        File selectedDirectory = directoryChooser.showDialog(new Stage());
+        if (selectedDirectory != null) {
+            selectedDirectoryLabel.setText(selectedDirectory.getAbsolutePath());
+        }
     }
 }
