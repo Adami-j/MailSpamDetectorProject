@@ -3,6 +3,7 @@
 package fr.til.projetfilrouge.mailspamdetectorproject.View;
 
         import fr.til.projetfilrouge.mailspamdetectorproject.Controller.ConnexionController;
+        import fr.til.projetfilrouge.mailspamdetectorproject.Controller.VisualisationMailController;
         import fr.til.projetfilrouge.mailspamdetectorproject.HelloApplication;
         import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModel;
         import javafx.event.ActionEvent;
@@ -101,12 +102,14 @@ public class ConnectVueController {
     public void ouverturePageVisualisationMail() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("visualisation-mail.fxml"));
         Parent root = fxmlLoader.load();
+        VisualisationMailController visualisationMailController = fxmlLoader.getController();
 
         Stage secondStage = new Stage();
         StackPane rootParent = new StackPane();
-        Scene scene = new Scene(root, 300, 250);
+        Scene scene = new Scene(root, 600, 600);
         secondStage.setScene(scene);
         secondStage.show();
+
         this.primaryStage.close();
     }
 
