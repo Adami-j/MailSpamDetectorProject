@@ -1,0 +1,42 @@
+Sujet: unifier le problème du rendement mercredi.
+Fyi.
+Transmis par brenda f herod hou ect le 05.05.2000.
+09:01 am.
+Rita wynne.
+05.05.2000.08:11 h.
+À: brenda f herod hou ect ect ect.
+Cc:
+Sujet: unifier le problème du rendement mercredi.
+Fyi.
+Transmis par rita wynne hou ect le 05.05.2000.08:10 h.
+
+De: dave nommensen 05.04.2000.06:56 h.
+À: george smith hou ect ect edward terry hou ect ect tricia.
+Bowen hou ect ect ect randall l gay hou ect ect patti sullivan hou ect ect pat.
+Clynes corp enron enron carlos j rodriguez hou ect ect robert.
+Superty hou ect ect bryce baxter hou ect ect rita wynne hou ect ect donna.
+Greif hou ect ect ect.
+Cc: jeff johnson corp enron enron tommy j yanowski hou ect ect beth.
+Perlman hou ect ect scott williamson hou ect ect jim ogg hou ect ect ect regan.
+M smith hou ect ect kenneth m harmon hou ect ect ect.
+Sujet: unifier le problème du rendement mercredi.
+Comme vous le savez, le système unifié a connu des performances significatives.
+Problèmes mercredi de 9 h 30 à 11 h 20 h la durée de la période.
+Le problème était dû à un type de comportement du système que nous n’avions pas connu auparavant.
+Le problème a été exacerbé par une multitude d’autres logins d’utilisateurs pensant.
+Qu’une connexion fraîche puisse fonctionner mieux d’autres logins ne jamais améliorer.
+Performance et généralement la dégrade, mais c’est une autre histoire qu’il y a eu.
+En fait, un utilisateur unique avec 21 sessions nous avons dû rebondir le serveur.
+Deux fois pour ramener le système à son niveau normal de rendement.
+La bonne nouvelle est que nous avons découvert ce qui a causé le problème, ce n’était pas un.
+Utilisateur particulier ou un rapport ou un processus particulier il s’agissait en fait d’un.
+Changement intentionnel à une table spécifique que nous avons fait de nombreuses fois.
+Le passé, mais ce changement particulier a eu des effets secondaires drastiques que nous avons.
+Contacté sybase avec ce problème pour voir s’ils peuvent aider à déterminer si.
+Le comportement est une caractéristique ou un bug dans le même temps, nous allons faire ces types.
+Des changements de nuit pendant les défectuosités prévues.
+Je m’excuses pour l’anxiété de frustration et le travail supplémentaire que cela a apporté.
+Problème et prendra toutes les précautions pour voir qu’il ne se reproduira pas.
+Si vous avez d’autres questions ou commentaires, n’hésitez pas à me donner une.
+Appel.
+Dave n.

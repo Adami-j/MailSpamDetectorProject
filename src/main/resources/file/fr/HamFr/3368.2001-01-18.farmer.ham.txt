@@ -1,0 +1,8 @@
+Sujet: tenaska 10.00 et 11.00.
+Veuillez ajuster les frais de demande suivants pour tenaska pour 11.00 et 10.00.
+Transaction 529856 jour 11.01 changement de 493.365.75 à 409.145.72.
+Transaction 529856 jour 10.01 changement de 2.405.706.50 à 2.349.906.50.
+Transaction 529856 jour 10.02 changement de 184.138.99 à 128.338.99.
+Transaction 514353 changement de volume de la demande de changement de 45.016 à 44.350.
+Merci.
+Megan.

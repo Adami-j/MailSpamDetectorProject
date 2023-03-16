@@ -1,0 +1,3 @@
+Objet: mtr 980070 pour 10.29.31.1999.
+Ces transactions ont été introduites manuellement dans les pop et relocalisées tout est bien.
+Marque.

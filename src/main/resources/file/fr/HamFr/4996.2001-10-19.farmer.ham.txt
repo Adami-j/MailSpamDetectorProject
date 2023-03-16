@@ -1,0 +1,14 @@
+Sujet: enrononline change to autohedge.
+À compter du lundi 22 octobre 2001, les changements suivants seront apportés à la fonctionnalité autohedge sur enrononline.
+Le volume sur la couverture respectera maintenant les paramètres minimaux d’augmentation du volume et du volume sur le produit parent voir les règles ci-dessous:
+Si le volume de transaction sur l’enfant est inférieur à la moitié du volume minimum des parents, il n’y aura pas de couverture.
+Si le volume de transaction sur l’enfant est plus de la moitié du volume minimum du parent, mais moins de la moitié de l’augmentation du volume sur le parent, le volume de couverture sera le volume minimum du parent.
+Pour tous les autres volumes, les mêmes règles d’arrondissement s’appliqueront en fonction de l’augmentation du volume sur le produit parent.
+Veuillez consulter l’exemple ci-dessous:
+Paramètres du parent s:
+Minimum: 5000.
+Augmentation: 1000.
+Volume sur le volume de transaction autohedge encaissé.
+1.2499.0.
+2500.5499.5000.
+5500.6499.6000.

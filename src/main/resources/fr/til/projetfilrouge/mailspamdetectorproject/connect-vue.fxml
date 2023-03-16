@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.til.projetfilrouge.mailspamdetectorproject.View.ConnectVueController">
+
+    <children>
+        <Label fx:id="labelUsernameField" layoutX="14.0" layoutY="18.0" text="Nom d'utilisateur" />
+        <TextField fx:id="usernameField" layoutX="14.0" layoutY="41.0" prefHeight="25.0" prefWidth="272.0" promptText="Entrez votre nom d'utilisateur ici" />
+        <Label fx:id="labelPasswordField" layoutX="14.0" layoutY="76.0" text="Mot de passe" />
+        <PasswordField fx:id="passwordField" layoutX="14.0" layoutY="99.0" prefHeight="25.0" prefWidth="272.0" promptText="Entrez votre mot de passe ici" />
+        <Button fx:id="buttonReset" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" onAction="#resetFields" styleClass="btn btn-secondary" text="Réinitialiser" />
+        <Button fx:id="buttonConnection" layoutX="227.0" layoutY="148.0" mnemonicParsing="false" onAction="#connection" text="Se connecter" />
+        <Label fx:id="labelOu" layoutX="14.0" layoutY="217.0" text="Ou saisir le fichier contenant les mails" />
+      <Button layoutX="14.0" layoutY="262.0" mnemonicParsing="false" onAction="#selectFile" text="Parcourir" />
+      <Label fx:id="selectedDirectoryLabel" layoutX="88.0" layoutY="267.0" prefHeight="17.0" prefWidth="103.0" />
+       
+
+    </children>
+
+</AnchorPane>

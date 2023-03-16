@@ -1,0 +1,7 @@
+Sujet: volume commentaires de l’unify à sitara.
+Fyi: voici l’unify à sitara bridge back schedule de l’équipe de sitara unify peut encore envoyer les fichiers à sitara, mais sitara ne sera pas traitée pendant l’absence de bridge back times listed cette liste est en réponse à plusieurs demandes de renseignements me concernant slow bridge back times to sitara hours sont listées en format 24 h central time.
+1 lundi vendredi 14:00.19:49 hrs fil simple.
+2 lundi vendredi 19:50.24:00 hrs multi thread.
+3 lundi vendredi vendredi 00:01.13:59 hrs pas de pont retour.
+4 sat dimanche 12 h 50.24 h 00 multithread.
+5 sat sunday 00:01.12:49 hrs aucun pont de retour.

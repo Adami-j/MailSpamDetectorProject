@@ -1,0 +1,8 @@
+Objet: changement dans le serveur scada à nahou scada 2.
+Le nom du serveur scada a été changé de l’ectu scadal à.
+Nahou scada 2.
+Si vous avez une feuille de calcul excel personnelle qui obtient des données du scada.
+Serveur utilisant netdde, vous devrez modifier la feuille de calcul pour changer l’ancien.
+Nom au nouveau nom.
+Si vous avez des questions ou avez besoin d’aide, veuillez appeler 34200.
+Dave stadnick.

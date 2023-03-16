@@ -1,0 +1,15 @@
+Objet: compteur 8743 dec 99.
+Voici les jours où j’ai des divergences avec pg e veuillez me faire savoir qui.
+Les chiffres sont bons merci.
+Thu.
+3.7159.
+Jour pg e hpl.
+12.05.145833.120000.
+12.10.6000000.35000.
+12.11.7000000.80000.
+12.17.3125.3100.
+12.21.50000.70000.
+12.22.020000.
+12.25.030000.
+12.26.030000.
+12.27.31375.63000.
