@@ -1,0 +1,6 @@
+Sujet: livraisons de duke à mobil.
+Apparemment, nous avons imprégné la livraison de duke à la raffinerie mobil en avril et le gaz a coulé à mobil via centana du duke en avril 1.2 et 3 je comprends qu’il n’y avait pas de billets dans sitara pour couvrir ce flux de sorte que j’ai capturé la transaction à sitara en utilisant les billets suivants:
+727481 reflète l’achat de hplc à partir de duke sur la tuyauterie de centana en avril 1.23 volume total estimé à 21.490 mm.
+538950 a été mis à jour pour montrer les livraisons à la raffinerie mobil hors tuyauterie de centana pour la même période de temps volume.
+727497 reflète la société hplc qui vend le gaz de retour à duke payback au même prix qu’il a acheté un volume de 10.000 mm pour 4.12 à compteur 7001.
+Veuillez me faire savoir s’il y a des questions s’il me semble que j’ai cru quelque chose sur mes excuses.
