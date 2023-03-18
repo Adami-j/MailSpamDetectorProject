@@ -95,7 +95,7 @@ public class ConnectVueController {
         try {
             ConnexionController connexionController = ConnexionController.getInstance(userModel);
 
-            ouverturePageVisualisationMail(null);
+            ouverturePageVisualisationMail(connexionController.getMessageInbox());
         } catch (MessagingException | IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(String.valueOf(e));
