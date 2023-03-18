@@ -1,5 +1,0 @@
-Objet: confirmation de paiement p 9990835.
-Commencer la signature du pgp.
-Version: gnupg vl 0.7 gnu linux.
-Nhbqlfihiv fwpgncv 9 jvy 8 et.
-Signature finale du pgp.

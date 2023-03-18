@@ -1,9 +1,0 @@
-Objet: révision du compteur marlin noir 986782 pour 8.98 ua 4.
-Révision selon la mesure il y a cependant un débit de 7.394 en 8.98.
-Il n’y a rien à indiquer que c’est le gaz qui a été reçu sur hpl dans oss i.
-Les mips vérifiés et il y a un énoncé de mesure qui appuie le taux de débit.
-De 7.394 mmbtu.
-Daren y a-t-il un accord dans le rpc qui n’a peut-être pas dépensé pour les oss que j’ai vérifiés.
-Oss pour toute l’année 1998 et il n’y a pas d’autres accords dans les oss qu’il fait.
-Il semble étrange que c’est le seul mois de flux.
-Merci stella.

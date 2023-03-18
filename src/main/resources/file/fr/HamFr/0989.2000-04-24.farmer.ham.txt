@@ -1,8 +1,0 @@
-Sujet: migration de popsprd.
-Le pont de popsprd sera migré à nahou scacll le 26 avril pour.
-Aux fins de débutation, cette migration devrait être transparente pour les utilisateurs de pop avec.
-À l’exception des feuilles de diffusion personnelles utilisant pops tags le nom du noeud pour.
-Les étiquettes pop sur les feuilles de diffusion personnelles devront être changées en scacll nahou.
-Permettre la mise à jour des données sur les pop.
-Veuillez m’appeler si vous avez des questions concernant la migration.
-Steve.

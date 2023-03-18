@@ -1,5 +1,0 @@
-Sujet: rajustements rétroactifs.
-L’ajustement du volume suivant a été introduit aujourd’hui rétroactif à 4.101:
-Compteur de transaction tr zn de prix à prix.
-737854.9885.05.01.100 gaz quotidien 0.14.
-Bob bob.

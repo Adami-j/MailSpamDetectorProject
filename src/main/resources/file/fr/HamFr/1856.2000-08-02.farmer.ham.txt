@@ -1,7 +1,0 @@
-Sujet: compteur: 6599.
-La transaction 138049 est engagée réserve de gaz à long terme totalisant 1350 mm par jour.
-C’est une bonne affaire.
-Toutefois, la transaction: 348446 est une transaction en double qui a été surestimée et.
-Il faut que la mauvaise affaire soit effacée.
-Il s’agit d’une réponse vance à une enquête effectuée par bob.
-Daren voulez-vous que je ne mette pas d’accord: 348446.

@@ -1,3 +1,0 @@
-Objet: correction de la première livraison pour cody.
-Il devrait lire cuba libre field et cuba libre central point.
-B.

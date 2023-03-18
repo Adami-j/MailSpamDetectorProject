@@ -1,6 +1,0 @@
-Objet: changements de volume décembre 2000.
-Veuillez noter les changements de volume suivants pour décembre 2000:
-Compteur d’accord zone commerciale de contrepartie de:
-126281.6296 eog res 1.5412.4000.
-125822.9658 kcs res 16.9379.7500.
-Bob bob.

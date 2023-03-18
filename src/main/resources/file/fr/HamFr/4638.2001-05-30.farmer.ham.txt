@@ -1,3 +1,0 @@
-Objet: compteur d’exploitation de cobra 9748.
-Le volume a été révisé de 0 à 5.000 d sur la transaction 137205 en vigueur 5.30.531.01.
-Bob bob.

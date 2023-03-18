@@ -1,2 +1,0 @@
-Sujet: modèle de prévision temp xls.
-C’est le fichier avec nos poids de température de la ville.

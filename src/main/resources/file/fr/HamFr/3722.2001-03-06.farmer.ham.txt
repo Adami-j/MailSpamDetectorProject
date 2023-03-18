@@ -1,3 +1,0 @@
-Sujet: mise à jour pour mars.
-J’ai ajouté un swing sur mobil oil et déplacé le numéro de vente sur le swing.
-Colonne pour l’écorce.

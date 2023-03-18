@@ -1,5 +1,0 @@
-Objet: uniformisation de la production retour des offres d’eol soulignées.
-La machine proton est mise en place et la production unifiée est maintenant disponible.
-Pour être si patient path manager, vous soulignerez maintenant vos offres d’eol.
-Jaune.
-Merci d n.

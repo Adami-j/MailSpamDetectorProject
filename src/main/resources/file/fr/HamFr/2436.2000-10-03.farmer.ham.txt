@@ -1,4 +1,0 @@
-Objet: compteur 1603.10.110.2.
-Le compteur fyi 1603 a un débit total de 48.667 sur un nom total de 40.000 transactions.
-380664.
-A.

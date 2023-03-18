@@ -1,7 +1,0 @@
-Objet: les mots de passe unifiés seront restés sous sybase 12.0.
-Tout.
-Lorsque nous convertissons unify en sybase 12.0, tous les mots de passe seront reset à.
-Houston une fois vous connectez pour unifier, vous devrez changer votre mot de passe.
-Il s’agit d’une influence latérale inévitable de la migration vers sybase 12.0.
-Merci.
-Chris.
