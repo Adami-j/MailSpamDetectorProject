@@ -38,7 +38,14 @@ public class ControllerBayesian {
         nonSpamCount = noSpamFiles.size();
 
         for (File file : spamFiles) {
-            List<String> lines = Files.readAllLines(file.toPath());
+            List<String> lines = null;
+            try {
+                lines = Files.readAllLines(file.toPath());
+            } catch (IOException e) {
+                //System.err.println("Error reading file: " + file.getName() + ". Ignoring this file.");
+                continue;
+            }
+
             for (String line : lines) {
                 String[] words = line.split("\\s+");
                 for (String word : words) {
@@ -52,7 +59,14 @@ public class ControllerBayesian {
         }
 
         for (File file : noSpamFiles) {
-            List<String> lines = Files.readAllLines(file.toPath());
+            List<String> lines = null;
+            try {
+                lines = Files.readAllLines(file.toPath());
+            } catch (IOException e) {
+                //System.err.println("Error reading file: " + file.getName() + ". Ignoring this file.");
+                continue;
+            }
+
             for (String line : lines) {
                 String[] words = line.split("\\s+");
                 for (String word : words) {
@@ -64,6 +78,7 @@ public class ControllerBayesian {
                 }
             }
         }
+
 
 
         for (String word : spamWordCounts.keySet()) {

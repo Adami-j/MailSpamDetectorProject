@@ -18,8 +18,8 @@ public class ControllerBayesianTest {
 
     @Test
     public void testTrain() throws IOException {
-        String spamFolder = "src/main/resources/file/SpamDirectory";
-        String noSpamFolder = "src/main/resources/file/nonSpamDirectory";
+        String spamFolder = "src/main/resources/file/SPAM";
+        String noSpamFolder = "src/main/resources/file/HAM";
         controller.train(spamFolder, noSpamFolder);
 
         assertTrue(controller.isSpam("Buy Viagra now!"));
