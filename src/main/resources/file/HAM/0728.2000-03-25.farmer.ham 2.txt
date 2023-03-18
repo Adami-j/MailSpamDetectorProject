@@ -1,0 +1,53 @@
+Sujet: votre adhésion à woodtips a été mise en place.
+Ce message électronique est de vous informer que votre adhésion à woodtips.
+A été mis en place.
+Cela signifie que vous ne recevrez pas de courrier de woodtips.
+Votre abonnement a été retenu parce qu’au moins 1 messages récents ont été.
+Soit rebondé par votre système d’e-mail, soit ne pouvait pas être livré en tout.
+Votre membre peut être rétabli à la normale en envoyant la commande détenue.
+À lyris listserv augusthome com.
+Notez que si votre adresse e-mail continue de rejeter votre abonnement.
+Will.
+Une fois de plus se tenir.
+Vous voudrez peut-être contacter les personnes responsables de votre courrier électronique.
+Déterminer.
+Pourquoi votre adresse e-mail a eu des problèmes.
+Pour de plus amples renseignements, un rapport de non-livraison est inclus ci-dessous:
+
+Organisme de message:
+Chemin de retour:
+Reçu: de listserv augusthome com 127.00.1 par localhost avec smtp.
+Lyris server version 3.43 apr 6.1999.10:07:17 sat 25 mars 2000.02:23:54.
+0600.
+Reçu: de mailman enron com mailman enron com 192.152.140.66.
+Par listserv augusthome com 8.93.89.3 avec esmtp id caa 29035.
+Pour sat 25 mars 2000.
+02:23:53.0600.
+Reçu: de dservl ect enron com dservl ect enron com 172.16.137.
+Par mailman enron com 8.88.88.8 corp 1.03 avec esmtp id haa 25648.
+Pour sat 25 mars 2000.
+07:33:10 gmt.
+Reçu: à partir de notes ect enron com notes ect enron com 172.16.433.
+Par dservl ect enron com 8.88.88.88.8 avec smtp id baa 23447.
+Pour sat 25 mars 2000.
+01:33:52.0600 cst.
+Reçu: par notes ect enron com lotus smtp mta v 4.65.863.25.20.1999.
+Id 862568 ad 00298 c 81 sat 25 mars 2000.01:33:49.0600.
+X lotus fromdomain: ect.
+De: ect notes admin admin.
+Réponse à: daren j farmer enron com.
+To: bounce woodtips 30771 listserv augusthome com.
+Numéro d’identification du message:
+Date: sat 25 mars 2000.01:02:42.0600.
+Sujet: nous sommes un enron com.
+Mime version: 1.0.
+Type de contenu: texte simple charset us ascii.
+Disposition du contenu: inline.
+Ce message est une réponse automatisée au courriel que vous m’avez récemment envoyé i.
+Reçu le message, mais l’adresse e-mail que vous avez utilisée a été modifiée à.
+Daren j farmer enron com.
+Veuillez mettre à jour votre livre d’adresse s pour tenir compte de ce changement.
+Cela garantira que je reçoive vos courriels dans l’avenir.
+Merci.
+Daren j agriculteur.
+Veuillez ne pas répondre à ce message car il a été automatiquement généré.

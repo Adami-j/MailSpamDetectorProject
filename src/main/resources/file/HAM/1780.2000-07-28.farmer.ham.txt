@@ -1,0 +1,5 @@
+Objet: nomination eastrans 7.29 et suivante.
+Il s’agit de nommer 32.800 mmbtu pour 7.28 dans eastrans.
+Les remboursements sont les suivants:
+7.800 mmbtu dans hpl de fcv.
+25.000 à mobil beaumont.

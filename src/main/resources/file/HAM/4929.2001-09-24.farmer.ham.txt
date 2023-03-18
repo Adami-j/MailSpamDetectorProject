@@ -1,0 +1,16 @@
+Objet: modifications du gestionnaire de stack enrononline.
+Nous avons apporté les modifications suivantes aux applications enrononline.
+Changements apportés au gestionnaire de pile.
+Amélioration de l’ordre de remplissage entrée en vigueur le mardi 25 septembre.
+Pour remplir un haut de l’ordre de stack dans stack manager, cliquez à droite sur l’ordre ombragé rose dans la fenêtre de profondeur du stack manager et sélectionnez remplir.
+Le négociateur a maintenant la capacité de remplir les commandes limites qui apparaissent au sommet de la chemise du négociateur sur les deux côtés.
+L’ordre sera maintenant rempli au volume complet de commande, peu importe le volume de stack du négociateur.
+Le remplissage d’une commande ne modifiera pas le prix de l’expéditeur ou ne provoquera pas de couverture.
+Résize les fenêtres flottées de cheminée à partir du mardi 25 septembre.
+Vous aurez maintenant la possibilité de redimensionner la fenêtre de la cheminée dans la mesure souhaitée.
+Modification du site web entrée en vigueur le lundi 24 septembre.
+Limiter les restrictions d’ordre sur les transactions physiques.
+Les clients ne seront pas autorisés à transagir avec eux-mêmes sur des transactions physiques si un haut de l’ordre limite de cheminée a été placé sur un produit physique la contrepartie ou le bureau qui a placé l’ordre ne sera pas autorisé à transagir sur lui.
+Si un client ou un bureau a des commandes de plafonnement de la pile à différents prix sur la soumission et l’offre et ensuite déplacer le prix d’un pour qu’ils soient au même prix les deux commandes seront annulées le client aurait effectivement transporté avec lui-même.
+Veuillez m’appeler si vous avez des questions merci.
+Savita x 31787.

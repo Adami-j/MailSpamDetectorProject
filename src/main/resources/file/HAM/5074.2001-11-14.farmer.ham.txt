@@ -1,0 +1,16 @@
+Sujet: cessation de zéro sentier dans le gestionnaire de sentier.
+Matt ben:
+Je réponds à votre demande de commentaires sur la révision du gestionnaire de sentier en élargissant les paramètres du processus de terminaison de sentier pour inclure des sentiers de volume zéro le dernier jour du mois comme moyen d’accélérer la réponse unifiée et de récupérer les temps.
+Sur la base de mes entrevues auprès de divers bureaux, dont aep et calgary, et de nos récentes discussions, nous trouvons qu’il faut une entreprise légitime pour permettre des chemins de volume zéro de rouler d’un mois à l’autre les contrats de livraison de gaz wellhead suivant sont un bilan de ce qu’il est proposé de faire en ce qui a trait à la cessation de la voie zéro.
+1 tous les sentiers qui sont zéro le dernier jour d’une exception de mois notée dans 2 ci-dessous se termineront ce jour-là et ne passeront plus dans le mois suivant.
+Cette fonction d’abandon de la trajectoire va courir chaque nuit tous les sentiers changés à zéro rétroactivement élimineront les sentiers des mois à venir à moins qu’un volume.
+Est sur cette voie dans le mois à venir.
+2 sentiers zéro marqués comme toujours envoyer des candidatures continuera de rouler d’un mois à un mois jusqu’à ce qu’ils aient été modifiés à une autre option de nomination il semble que la hpl.
+736 sentiers et sentiers de nigas 1136 peuvent avoir des sentiers roulants qui n’ont plus besoin d’un traitement ponctuel spécial de ces sentiers sera coordonné avec.
+Programmeur lorsque vous êtes prêt.
+3 sentiers zéro qui roulent d’un mois à un mois à l’aide de la fonction de gestion du volume ne pas envoyer la fonction cessera de le faire de sorte que ce soit convenu par patti en ce qui a trait à:
+Sentiers pour le suivi de oba.
+Tous:
+Veuillez répondre par courriel avec vos commentaires.
+Richard.
+X 37339.

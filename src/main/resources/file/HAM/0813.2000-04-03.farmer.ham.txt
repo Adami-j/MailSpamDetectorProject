@@ -1,0 +1,37 @@
+Objet: procédure d’ajout de nouveaux billets de capacité pour le service multibureau.
+Utilisation révisée.
+Révision en gras laissez passer à quiconque peut avoir besoin de cela.
+Afin de fournir la capacité de suivre les frais de transport par bureau sitara.
+Il a été modifié afin de permettre à plusieurs billets de capacité de transport pour la même capacité.
+Contrat de service pourvu qu’il s’agisse de différents postes et qu’il ne s’agit que d’un seul.
+Tagged comme primaire, voici la procédure de mise en place de nouvelles capacités.
+Billets pour refléter les autres comptoirs:
+A vous remarquerez probablement d’abord ceci via un message d’erreur d’avertissement dans path.
+Gestionnaire lors de la construction d’une nouvelle voie, le message lisera quelque chose comme celui-ci.
+Source destination 123456 pour bureau imct ne correspond pas au contrat de service 3434.
+Et sera enlevé.
+B prendre note du numéro de transaction figurant dans la liste de service du contrat de service.
+Que vous utilisez dans la nouvelle voie.
+C ouvrir la transaction de capacité de transport à sitara puis frapper copie.
+D sur le nouveau contrat:
+Changez l’acheteur du vieux bureau au nouveau bureau qui correspond à la fourniture.
+Ou une transaction de marché que vous êtes paisible avec si c’est une transaction pour laquelle nous sommes.
+Agent alors ne change pas l’acheteur, mais au lieu de changer l’agent au nouveau.
+Bureau la transaction principale portera l’agent réel l’agent.
+Le contrat sera réglé et sélectionnez le contrat d’agent.
+En changeant l’acheteur, le champ contractuel doit être blanché à nouveau sélectionnez.
+Le contrat de pipeline.
+Juste au-dessus des différents éléments de ligne de change est une boîte de contrôle principale des transactions.
+Un check it.
+Sur chaque élément de ligne de change, changez le mdq à zéro et pour tout élément négocié.
+Les taux non vérifiés ainsi que l’accord principal porteront le mdq et.
+Toute demande négociée de marchandises ou de carburant.
+Mise à la sortie du coup.
+E vous devrez peut-être récupérer le gestionnaire de sentier que vous devriez voir le numéro de transaction.
+Dans la liste de service maintenant lisez plusieurs offres de service à droite cliquez sur le bouton droit.
+Les accords spécifiques.
+F reconstruisez la voie comme vous voulez initialement le message d’erreur d’avertissement.
+Ne devrait pas apparaître de nouveau.
+Cela pourrait se produire pour toute combinaison de bureau et de contrat de service.
+Veuillez le déposer dans votre dave d’appel si je ne peux pas trouver ce dossier.
+Merci d n.

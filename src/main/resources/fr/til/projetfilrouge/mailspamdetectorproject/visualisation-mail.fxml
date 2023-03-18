@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.til.projetfilrouge.mailspamdetectorproject.Controller.VisualisationMailController">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+
+    <!-- Colonne 1: Liste de mails considérés comme spam -->
+    <VBox spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Label text="Mails considérés comme spam" />
+        <ListView fx:id="spamListView" />
+    </VBox>
+
+    <!-- Colonne 2: Liste de mails non-spam -->
+    <VBox spacing="5" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <Label text="Mails non-spam" />
+        <ListView fx:id="nonSpamListView" />
+    </VBox>
+
+    <!-- Colonne 3: Boutons pour déplacer les mails -->
+    <VBox prefHeight="428.0" prefWidth="59.0" spacing="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Button onAction="#moveToNonSpam" text="&gt;&gt;" />
+        <Button onAction="#moveToSpam" text="&lt;&lt;" />
+    </VBox>
+
+
+</GridPane>

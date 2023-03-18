@@ -1,0 +1,15 @@
+Objet: activation des commandes de plafonnement des prix.
+En préparation pour aller vivre avec la nouvelle version d’enrononline s’il vous plaît configurez.
+Vos produits pour permettre des commandes de plafonnement des prix vous pouvez le faire par:
+1 souligner le produit et choisir les propriétés du produit.
+2 dans le coin inférieur droit vérifiez que:
+Prix taille de tick est là où vous voulez que le prix tick contrôle le minimum.
+Augmentations de prix qu’un client peut spécifier.
+La case autorisée est cotée sous la section des commandes.
+Le volume maximum dans la section commandes est fixé où vous le souhaitez.
+Si vous ne faites pas ce client, vous ne serez pas en mesure de déposer des commandes de plafonnement des prix.
+Sur vos produits.
+Si vous avez des questions, veuillez téléphoner au bureau d’aide enrononline nord.
+Amérique: 713.853.4357 europe: 44.20.7783.7783 australie asie: 61.29229.
+2300.
+Dave.
