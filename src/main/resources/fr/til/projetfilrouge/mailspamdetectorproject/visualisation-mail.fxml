@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.til.projetfilrouge.mailspamdetectorproject.Controller.VisualisationMailController">
+<GridPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.til.projetfilrouge.mailspamdetectorproject.Controller.VisualisationMailController">
     <columnConstraints>
         <ColumnConstraints />
         <ColumnConstraints />
@@ -30,6 +30,7 @@
     <VBox prefHeight="428.0" prefWidth="59.0" spacing="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
         <Button onAction="#moveToNonSpam" text="&gt;&gt;" />
         <Button onAction="#moveToSpam" text="&lt;&lt;" />
+      <Button mnemonicParsing="false" onAction="#onClickUpdate" text="recharger" />
     </VBox>
 
 
