@@ -22,6 +22,13 @@ public class ControllerBayesian {
     private int nonSpamCount;
 
 
+    /**
+     * @Author Mateo Isabey
+     * permet l'apprentissage automatique
+     * @param spamFolder
+     * @param noSpamFolder
+     * @throws IOException
+     */
     public void train(String spamFolder, String noSpamFolder) throws IOException {
 
         List<File> spamFiles = Files.walk(Paths.get(spamFolder))
@@ -93,6 +100,12 @@ public class ControllerBayesian {
         nonSpamProbability = (double) nonSpamCount / (spamCount + nonSpamCount);
     }
 
+    /**
+     * @Author Mateo Isabey
+     * Verification si le mail est un spam
+     * @param message
+     * @return
+     */
     public boolean isSpam(String message) {
         double spamScore = Math.log(spamProbability);
         double hamScore = Math.log(nonSpamProbability);
