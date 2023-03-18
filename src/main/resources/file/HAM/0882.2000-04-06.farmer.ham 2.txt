@@ -1,0 +1,6 @@
+Sujet: ces carthage.
+J’ai diminué les volumes de carthage en raison d’un incendie à l’usine east texas également.
+Les volumes fournis par le co-propriétaire m’ont été donnés en tant que volumes bruts et devraient.
+Ont été nets après pvr j’ai apporté des changements pour tenir compte des volumes moins élevés.
+Le changement total du volume est d’environ 5500 carthage total net diminue par rapport au volume total.
+90565 à 85148 net.

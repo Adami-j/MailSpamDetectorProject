@@ -1,0 +1,6 @@
+Sujet: votre nom d’utilisateur et votre mot de passe.
+Cher agriculteur daren.
+Voici votre nom d’utilisateur et votre mot de passe que vous avez demandé.
+Nom d’utilisateur: dfarmer 2.
+Mot de passe: jungle.
+Vous pouvez mettre à jour vos informations à:
