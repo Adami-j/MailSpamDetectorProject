@@ -12,6 +12,7 @@ public class ConnexionController {
     private static ConnexionController connexionInstance = null;
     private UserModel userModel;
     private Session session;
+    private Store store;
 
 
     /**
@@ -41,7 +42,7 @@ public class ConnexionController {
         };
 
         session = Session.getInstance(properties,authentificator);
-        Store store = session.getStore();
+        store = session.getStore();
         store.connect(userModel.getLogin(), userModel.getPassword());
 
 
@@ -76,8 +77,7 @@ public class ConnexionController {
             }
         }
         // Fermeture de la boîte de réception et de la connexion
-        inbox.close(false);
-        store.close();
+
 
     }
 
@@ -118,7 +118,7 @@ public class ConnexionController {
      */
     public Message[] getMessageInbox() throws MessagingException {
         //récupération du storage provider
-        Store store = session.getStore();
+
 
         //récupération des emails courrants
         Folder inbox = store.getFolder("INBOX");
@@ -126,8 +126,7 @@ public class ConnexionController {
         Message[] messages = inbox.getMessages();
 
         // Fermeture de la boîte de réception et de la connexion
-        inbox.close(false);
-        store.close();
+
 
         return messages;
     }
