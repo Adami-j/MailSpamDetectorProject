@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
         //FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("connect-vue.fxml"));
         Parent root = fxmlLoader.load();
-        Scene scene = new Scene(root, 400, 300);
+        Scene scene = new Scene(root, 500, 375);
         ConnectVueController controller = fxmlLoader.getController();
         controller.setPrimaryStage(stage);
         stage.setResizable(false);
