@@ -1,0 +1,2 @@
+Objet: intraday eastrans changement de nomination pour 9.600.
+Les livraisons continuent d’être de 30000.

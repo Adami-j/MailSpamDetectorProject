@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.Button?>
-<GridPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.til.projetfilrouge.mailspamdetectorproject.Controller.VisualisationMailController">
+<GridPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.til.projetfilrouge.mailspamdetectorproject.Controller.VisualisationMailController">
     <columnConstraints>
         <ColumnConstraints />
         <ColumnConstraints />
@@ -18,20 +15,22 @@
     </rowConstraints>
 
     <!-- Colonne 1: Liste de mails considérés comme spam -->
-    <VBox GridPane.columnIndex="0" GridPane.rowIndex="0" spacing="5">
+    <VBox spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="1">
         <Label text="Mails considérés comme spam" />
         <ListView fx:id="spamListView" />
     </VBox>
 
     <!-- Colonne 2: Liste de mails non-spam -->
-    <VBox GridPane.columnIndex="1" GridPane.rowIndex="0" spacing="5">
+    <VBox spacing="5" GridPane.columnIndex="2" GridPane.rowIndex="1">
         <Label text="Mails non-spam" />
         <ListView fx:id="nonSpamListView" />
     </VBox>
 
     <!-- Colonne 3: Boutons pour déplacer les mails -->
-    <VBox GridPane.columnIndex="2" GridPane.rowIndex="0" spacing="5">
-        <Button text=">>" onAction="#moveToNonSpam" />
-        <Button text="<<" onAction="#moveToSpam" />
+    <VBox prefHeight="428.0" prefWidth="59.0" spacing="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Button onAction="#moveToNonSpam" text="&gt;&gt;" />
+        <Button onAction="#moveToSpam" text="&lt;&lt;" />
     </VBox>
+
+
 </GridPane>

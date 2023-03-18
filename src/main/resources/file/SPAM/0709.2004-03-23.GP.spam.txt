@@ -1,0 +1,36 @@
+Objet:
+2.2.
+X information sur le message:
+S 63 h 5 ja 567 vssd 2 p 26 n 61 wl 67 hzvlnqxjn.
+Reçu: from mimbdzl 7 hinet net 188.104.212.29 by.
+B 255 jyx hinet net avec.
+Microsoft smtpsvc 5.02195.6824.
+Tue 23 mars 2004.00:38:43.0100.
+Reçu: de caractérticwzo 9 damsel 94.236.64.48.
+Par hinet net dr 937 avec smtp.
+Id 619255 c 738 ox.
+Authid: mitchelforeman.
+Mon 22 mars 2004.23:37:43.0200.
+De: corine browning xlvjagegpeudkw wanadoo fr.
+To: paliourg paliourg iit demokritos gr.
+2.2.
+Sujet: spam fwd: les médecins n’ont pas besoin d’achats sécurisés vcodln v gra xan x valii um twjticwy.
+Date: mon 22 mars 2004.19:39:43.0600.
+Numéro d’identification du message:
+Mime version: 1.0.
+Type de contenu: alternative multipartie.
+Limite 2080774744588021497.
+2080774744588021497.
+Type de contenu: texte html.
+Codage de transfert de contenu: cité imprimable.
+Doctype html public w 3 c dtd html 4.01 transition à http://www.
+W 3 org tr html 4 free dtd.
+Html.
+Tête.
+Titleall the medicines you will ever need title.
+Tête.
+Corps.
+A href 3 dhttp://www populardrugs bizimg src 3 dhttp://www populardrug.
+S biz viz 4 gif frontière 3 do a.
+Corps.
+Html.

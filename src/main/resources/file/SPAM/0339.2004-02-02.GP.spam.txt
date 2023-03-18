@@ -1,0 +1,18 @@
+Objet:
+Langue de script javascript type de texte javascript javascript.
+
+Fonction dopopunder.
+Var a http: rd focalex com popunder 252776.
+Var b largeur 720 hauteur 300 emplacement 1.
+Var c menubar 1 habitable 1 scrollbars 1.
+État de var d 1 titlebar 1 barre d’outils 1 hotkeys 1.
+Fenêtre popunder ouvrir a sous b c d.
+Popunder blur window focus settimeout window focus 1000.
+
+
+Script.
+Dopopunder de charge du corps sur charge.
+A href http: rd focalex com popunder 252776 onmouseover window status return true.
+Onmouseout window status return true.
+Img src http://www btg sameba com bush bmp border 0 img a.
+Corps.

@@ -1,0 +1,2 @@
+Sujet: str rndlen 2.4 temps supplémentaire 4 mot.
+Bodyhtml.

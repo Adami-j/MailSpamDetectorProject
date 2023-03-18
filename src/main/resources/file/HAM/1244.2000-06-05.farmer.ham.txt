@@ -1,0 +1,35 @@
+Sujet: nouveau pont su.
+La nouvelle sitara pour unifier le moniteur de pont est en cours de production.
+Le moniteur montre que les transactions en état d’erreur ont échoué ou en queue pour pondre.
+En attente de négociations qui vont être unifiées de sitara.
+Vous le trouverez sous start programs trading sitara su bridge.
+Moniteur.
+Vous devrez peut-être charger le logiciel borland bde v 5.0 pour utiliser ce logiciel si ce n’est pas le cas.
+Déjà chargé.
+Nous avons amélioré le moniteur pour en faire un outil plus utile.
+Si la transaction est dans un état d’erreur sur le côté de sitara, nous n’avons pas l’envoyé à.
+Unify.
+Si la transaction dans un état d’erreur du côté unifié sitara l’a envoyé pour unifier.
+Toutefois, c’est dans le groupe de négociation d’unify failed deal group.
+Vous pouvez trier par les colonnes le mieux pour trier par unité d’affaires.
+La colonne de date montre la dernière fois que quelqu’un a modifié l’entente.
+La date de début et la date d’arrêt sont commencées et la date de fin de l’entente.
+L’id de transaction de sitara ainsi que l’id de transaction eol.
+Indique si la transaction est une unité d’affaires est un agent de la transaction.
+Si vous êtes un contrat ou un soutien de validation, veuillez ne pas modifier le statut p.
+Transactions il s’agit des transactions en attente de statut pour les transactions de bureau à bureau.
+Attendre l’autre bureau pour approuver la transaction ou modifier la transaction si vous êtes.
+Relâchez ces offres vous serez l’approcheur de la transaction comme vous l’avez.
+Accès à plusieurs disques.
+Vous pouvez cliquer sur le bouton rafraîchir pour réinterroger les données ou configurer le rafraîchissement automatique.
+Sur la barre d’outils.
+Nous n’avons pas construit de filtre par unité d’affaires pour plusieurs raisons:
+Le coût de la construction du filtre.
+Il est plus facile de soutenir si tout le monde regarde la même chose.
+S’il y a une nouvelle unité d’affaires, vous le verrez.
+Normalement, il ne devrait pas y avoir plus qu’un écran rempli de transactions en erreur.
+État une fois que petro peut suncor sunoco sont mis en place, nous aurons un raisonnable.
+Numéro à regarder et vous pouvez trier par la colonne unité d’affaires.
+Si vous voulez filtrer, vous pouvez le faire en utilisant l’envoi à excel.
+Fonctionnalité sous l’option de barre d’outils dépouillée de fichier pour excel.
+Si vous avez des questions ou des problèmes, veuillez téléphoner à sitara hotline.

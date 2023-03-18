@@ -1,0 +1,37 @@
+Objet: demande de réduction de temps de production de pop.
+Le serveur de base de données de production de pop sera descendu pendant la fin de semaine pour un 3.
+Période d’heure.
+Pour la mise à niveau de mémoire, veuillez me faire savoir s’il y a une fenêtre de 3 hr préférée si.
+Il y a.
+Aucun problème avec y all can we will ask the maintenance between 12.3 pm.
+Samedi 10.21.00.
+J’informerai y tous les délais réels une fois qu’ils auront été finalisés depuis qu’ils existent.
+Autres systèmes.
+Courir sur ce serveur.
+Merci.
+Romeo.
+Transmis par romeo d souza hou ect le 10.19.2000.02:47.
+Pm.
+De: neil leininger enron le 10.19.2000.02:01 pm.
+À: christine pham hou ect ect romeo d souza hou ect ect ect.
+Cc:
+Objet: demande en temps de descente.
+Fyi.
+Transmis par neil leininger na enron le 10.19.2000.
+02:02 pm.
+Malcolm wells enron com le 10.19.2000.01:54:49 pm.
+À: dba enron com.
+Cc:
+Objet: demande en temps de descente.
+L’équipe d’infrastructure unix aimerait demander des temps de téléchargement sur le système.
+Aurora ce week-end le système a 2 symboles de mémoire défectueux dont nous avons besoin.
+Pour remplacer avant de causer un problème, nous demandons 3 heures.
+Effectuer le remplacement de la mémoire les bases de données suivantes seraient effectuées:
+Eqtprod.
+Dcfprod.
+Popprod.
+Trdprod.
+Semprod.
+Sitprod 2.
+Infprd 53.
+Veuillez me faire savoir si nous pouvons avoir du temps pour cette maintenance.

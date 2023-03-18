@@ -1,0 +1,13 @@
+Objet: estimations entex pour 12.99.
+Vous trouverez ci-joint deux feuilles de calcul montrant les données de entex pour le 99 décembre.
+Le facteur jano 0 montre la différence entre les estimations qui auraient dû être alimentées.
+Sur les pop et le réel pour tous les mètres dans la série de compteurs 2001.2500.2540.
+3509.3519.3530.3533.6822.9544 je n’ai pas le réel pour vidor cg.
+Mais j’ai estimé que le volume était de 190.00.
+Les actualités ont été de 6105.26 mmcf à l’aide de l’estimation de vidor cg.
+Les estimations étaient de 4870.37 mmcf.
+Différence de 1237.89 mmcf.
+Jano 0 scada montre que si nous avions des informations exactes du cg hempstead.
+Rtu la différence aurait été de 819.186 mmcf.
+Si vous avez des questions, veuillez appeler.
+Gary.

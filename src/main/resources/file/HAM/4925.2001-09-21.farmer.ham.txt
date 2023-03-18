@@ -1,0 +1,48 @@
+Sujet: analyse du marché du texas.
+Équipe:
+J’ai demandé à troy denetsosie d’être responsable de la compilation et de la mise à jour d’une analyse détaillée du marché de l’approvisionnement et de l’infrastructure du texas cette information appuiera à la fois nos activités d’origine et de commerce et nous utiliserons beaucoup du site web format et d’autres développées par les autres régions spcisciemment troy déchargera beaucoup le travail d’analyse que jd fait actuellement sur le marché et il travaillera en étroite collaboration avec bryan hull pour répondre aux besoins les plus immédiats des commerçants.
+Les produits livrables de troy seront les suivants: 1 section texas sur la page web de base de gaz modélisée après la région centrale 2 un rapport quotidien sur les transactions de flux de gaz positons etc 3 un rapport quotidien sur les transactions de base sur les flux de gaz etc 3 une analyse détaillée des plans d’infrastructure flux etc qui appuiera le développement de nos positions de hub du marché de l’approvisionnement veuillez lui donner votre soutien.
+Respect.
+Brian.
+Message original.
+De: bryan gary.
+Envoyé: vendredi 21.2001.10:42 h.
+À: redmond brian.
+Sujet: fw: base de données crm.
+Comme vous le savez beaucoup de jd mark et mon temps à ce jour a été axé sur la recherche des numéros de téléphone des entreprises et des affaires passées que nous avons pu faire avec les clients que nous avons commencé avec et avançons depuis ce point de départ dans les quelques semaines à venir nous avons abordé la découverte et commencé à descendre la route vers ce que j’espère être très rentable 2001.2002.
+La base de données crm devrait être un excellent outil pour ceux qui suivent, il semble que les initiateurs se connecteraient aux réunions d’appels et à toute autre entreprise qui est discutée avec le client. cela aurait été un excellent outil pour notre groupe à avoir à partir de ground zero.
+Il semble qu’il y ait encore des problèmes de développement dans le cadre de ce programme, alors que nous utilisons un certain nombre de feuilles de calcul pour suivre notre entreprise si la base de données crm n’est pas approuvée ou retardée, nous avons décidé de peupler la base de données de la loi 2000, qui est actuellement soutenue par enron, mais n’est pas aussi conviviale que le crm serait le coût de la loi 2000 est relativement gratuit.
+Si vous avez des questions, veuillez me faire savoir.
+Message original.
+De: buss jd jd.
+Envoyé: vendredi 21.2001.9:14 h.
+À: bryan gary knippa mark redmond brian.
+Sujet: base de données crm.
+Le jeudi de cette semaine dernière, j’ai participé à une réunion au sujet de la base de données crm conçue par siebel pour traiter les renseignements sur les clients.
+La base de données crm n’a été mise en œuvre qu’avec des groupes d’origine commerciale au sein d’enron et fournit les capacités suivantes:
+1 gestion des contacts avec le compte.
+2 planification du suivi des activités.
+3 gestion potentielle des transactions.
+4 outlook synchronisation.
+5 synchronisation de connectivité à distance.
+6 e-mail de siebel et d’activité des documents.
+Les groupes enron actuels qui utilisent ce système sont les marchés industriels enron qui ont été mis en œuvre en mai 2001 et les marchés de marchandises qui ont été mis en œuvre en août 2001, voici une liste de la façon dont ces groupes utilisent le système:
+Mkts industriels mkts fret mkts.
+Utilisateurs 175.45.
+Contreparties 8.200.20.000.
+Contacts 14.000.20.000.
+Activités 1.200.900.
+Citations 150.
+Possibilités 361.11.
+Les groupes suivants ont également demandé ce système et l’ont mis en œuvre:
+Eol.
+Global mkts.
+Ees.
+Transports.
+East power orig.
+Dette insolvable.
+Certains des coûts de base et des échéanciers pour ce système sont 120.150.000 pour 20.30 utilisateurs avec un calendrier de 5 semaines pour la mise en œuvre ceci est une mise en œuvre de base qui peut ne pas inclure toutes les fonctionnalités indiquées ci-dessus i e aucune connectivité à distance.
+La raison pour laquelle j’ai écrit ceci est de montrer un système possible qui pourrait être utilisé par les groupes d’origine et d’échange de gaz pour gérer les coordonnées et partager les données entre groupes le coût de la mise en œuvre de ce système pour tous les groupes d’origine ne semble pas prohibitif et il pourrait être mis en œuvre dans un bon délai certaines des questions sont la coordination entre les groupes et le désir de partager de l’information me faire savoir si vous pensez que c’est une possibilité viable et quel serait le meilleur moyen d’aborder les autres groupes d’origine.
+Colin tonks database system guy au sein du groupe fundamentals était également à la réunion et pense que cela fonctionnerait très bien, il serait le coordonnateur individuel des efforts du côté du système du gaz naturel.
+Merci.
+Jd.
