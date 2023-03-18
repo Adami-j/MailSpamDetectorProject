@@ -182,7 +182,7 @@ public class ConnectVueController {
         for (File file : textFiles) {
             StringBuilder contentBuilder = new StringBuilder();
             MimeMessage message = new MimeMessage(session);
-
+            String sujet = "";
             try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
                 String line;
                 int lineCount = 0;
@@ -191,13 +191,13 @@ public class ConnectVueController {
                     if (lineCount!=0){
                         contentBuilder.append(line).append("\n");
                     }else {
-                        message.setSubject(line);
+                        sujet = line;
                     }
                     lineCount++;
                 }
             }
             message.setContent(contentBuilder.toString(), "text/plain");
-            message.setSubject(file.getName());
+            message.setSubject(sujet);
             messages.add(message);
         }
         return messages;
