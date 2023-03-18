@@ -16,9 +16,17 @@ package fr.til.projetfilrouge.mailspamdetectorproject.View;
         import javafx.stage.DirectoryChooser;
         import javafx.stage.Stage;
 
+        import javax.mail.Message;
         import javax.mail.MessagingException;
+        import javax.mail.Session;
+        import javax.mail.internet.MimeMessage;
+        import java.io.BufferedReader;
         import java.io.File;
+        import java.io.FileReader;
         import java.io.IOException;
+        import java.util.ArrayList;
+        import java.util.List;
+        import java.util.Properties;
 
 /**
  * la classe Connect vue est le controleur du fxml connect-vue
@@ -38,7 +46,7 @@ public class ConnectVueController {
     Button buttonConnection;
 
     @FXML
-    private Label selectedDirectoryLabel;
+    private TextField selectedDirectoryLabel;
 
     private Stage primaryStage;
 
@@ -86,7 +94,8 @@ public class ConnectVueController {
         userModel.setPassword(password);
         try {
             ConnexionController connexionController = ConnexionController.getInstance(userModel);
-            ouverturePageVisualisationMail();
+
+            ouverturePageVisualisationMail(null);
         } catch (MessagingException | IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(String.valueOf(e));
@@ -95,17 +104,19 @@ public class ConnectVueController {
 
     }
 
+
+
     /**
      * @author Julien ADAMI
      * Méthode qui crée une nouvelle fenêtre pour afficher les mails dans un premier temps
      * puis qui les tries en 3 catégories : spams, non spams, suspects
      * et qui ferme la fenêtre de connexion
      */
-    public void ouverturePageVisualisationMail() throws IOException {
+    public void ouverturePageVisualisationMail(Message[] messages) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("visualisation-mail.fxml"));
         Parent root = fxmlLoader.load();
         VisualisationMailController visualisationMailController = fxmlLoader.getController();
-
+        visualisationMailController.setListeMessages(messages);
         Stage secondStage = new Stage();
         StackPane rootParent = new StackPane();
         Scene scene = new Scene(root, 600, 600);
@@ -126,4 +137,74 @@ public class ConnectVueController {
             selectedDirectoryLabel.setText(selectedDirectory.getAbsolutePath());
         }
     }
+
+    /**
+     * @author Julien ADAMI
+     * fonction qui s'active lors du click sur le bouton "valider", elle permet de récupérer les fichiers txt d'un dossier
+     * et de les convertir en messages en les transmettant à la vue de visualisation des mails
+     * @param actionEvent
+     * @throws IOException
+     * @throws MessagingException
+     */
+    public void fileConnection(ActionEvent actionEvent) throws IOException, MessagingException {
+        if(selectedDirectoryLabel == null ||selectedDirectoryLabel.getText() == null ||
+                getFilesFromDirectory(new File(selectedDirectoryLabel.getText())) ==null ||  getFilesFromDirectory(new File(selectedDirectoryLabel.getText())).length < 1) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Aucun fichier txt dans le dossier");
+            alert.show();
+        } else {
+            File[] textFiles = getFilesFromDirectory(new File(selectedDirectoryLabel.getText()));
+            List<Message> messages = textFilesToMessages(textFiles);
+            Message[] messagesArray = messages.toArray(new Message[0]);
+            System.out.printf("Nombre de messages : %d"+"%n", messagesArray.length);
+            ouverturePageVisualisationMail(messagesArray);
+
+        }
+    }
+
+    //fonction qui permet de récupérer les fichiers txt d'un dossier
+    public File[] getFilesFromDirectory(File directory) {
+        return directory.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));
+    }
+
+    /**
+     * @author Julien ADAMI
+     * Convertit un tableau de fichiers texte en tableau de messages
+     * @param textFiles
+     * @return
+     * @throws IOException
+     * @throws MessagingException
+     */
+    public List<Message> textFilesToMessages(File[] textFiles) throws IOException, MessagingException {
+        List<Message> messages = new ArrayList<>();
+        Session session = Session.getInstance(new Properties());
+
+        for (File file : textFiles) {
+            StringBuilder contentBuilder = new StringBuilder();
+            MimeMessage message = new MimeMessage(session);
+
+            try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+                String line;
+                int lineCount = 0;
+                while ((line = reader.readLine()) != null) {
+                    // permet de ne pas compter la première ligne comme une ligne de texte car c'est le sujet : objet du mail
+                    if (lineCount!=0){
+                        contentBuilder.append(line).append("\n");
+                    }else {
+                        message.setSubject(line);
+                    }
+                    lineCount++;
+                }
+            }
+            message.setContent(contentBuilder.toString(), "text/plain");
+            message.setSubject(file.getName());
+            messages.add(message);
+        }
+        return messages;
+    }
+
+
+
+
+
 }
