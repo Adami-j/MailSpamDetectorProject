@@ -169,6 +169,7 @@ public class ConnexionController {
         transport.connect(userModel.getLogin(), userModel.getPassword());
         transport.sendMessage(message, message.getAllRecipients());
         transport.close();
+        incrementNbMailSent();
     }
 
     private static final String FILENAME = "src/main/java/fr/til/projetfilrouge/mailspamdetectorproject/Controller/nbMailSend.txt";
