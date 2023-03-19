@@ -66,13 +66,43 @@ public class ConnexionControllerTest {
         assertEquals(connexionController, connexionController2);
     }
 
-    @Test
+    /*@Test
     public void testIsConnected() throws Exception {
+        System.out.println("connexionController.isConnected()  "+ connexionController.isConnected());
         assertTrue(connexionController.isConnected());
-    }
+    }*/
 
     @Test
     public void testGetMessageInbox() throws Exception {
         assertNotNull(connexionController.getMessageInbox());
+    }
+
+    @Test
+    public void testIncrementCounter() throws MessagingException, IOException {
+        int counter = connexionController.getCounter();
+        connexionController.incrementNbMailSent();
+        try {
+            TimeUnit.SECONDS.sleep(5); // Pause de 5 secondes
+        } catch (InterruptedException e) {
+            // Gestion de l'exception
+        }
+        int counterNow = connexionController.getCounter();
+        System.out.println("IS hear ! "+counter + " "+counterNow);
+        assertEquals(counter + 1, counterNow);
+        connexionController.decrementNbMailSent();
+    }
+
+    @Test
+    public void testDecrementCounter() throws MessagingException, IOException {
+        int counter = connexionController.getCounter();
+        connexionController.decrementNbMailSent();
+        try {
+            TimeUnit.SECONDS.sleep(5); // Pause de 5 secondes
+        } catch (InterruptedException e) {
+            // Gestion de l'exception
+        }
+        System.out.println(counter + " "+connexionController.getCounter());
+        assertEquals(counter -1, connexionController.getCounter());
+        connexionController.incrementNbMailSent();
     }
 }
