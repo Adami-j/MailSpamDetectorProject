@@ -162,6 +162,7 @@ public class ConnectVueController {
         }
     }
 
+
     //fonction qui permet de récupérer les fichiers txt d'un dossier
     public File[] getFilesFromDirectory(File directory) {
         return directory.listFiles((dir, name) -> name.toLowerCase().endsWith(".txt"));

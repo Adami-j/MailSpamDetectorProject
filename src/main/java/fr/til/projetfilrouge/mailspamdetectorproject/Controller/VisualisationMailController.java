@@ -148,7 +148,7 @@ public class VisualisationMailController {
         setSpamList(listeMessagesSpam, spamListView);
         setOnMouseClickedExtract(nonSpamListView);
         setOnMouseClickedExtract(spamListView);
-        
+
         System.out.println("spam : "+listeMessagesSpam.size());
         System.out.println("non spam : "+listeMessagesNonSpam.size());
 

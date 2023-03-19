@@ -49,7 +49,7 @@ public class ControllerBayesian {
             try {
                 lines = Files.readAllLines(file.toPath());
             } catch (IOException e) {
-                //System.err.println("Error reading file: " + file.getName() + ". Ignoring this file.");
+                System.err.println("Error reading file: " + file.getName() + ". Ignoring this file.");
                 continue;
             }
 
@@ -70,7 +70,7 @@ public class ControllerBayesian {
             try {
                 lines = Files.readAllLines(file.toPath());
             } catch (IOException e) {
-                //System.err.println("Error reading file: " + file.getName() + ". Ignoring this file.");
+                System.err.println("Error reading file: " + file.getName() + ". Ignoring this file.");
                 continue;
             }
 
@@ -123,5 +123,17 @@ public class ControllerBayesian {
             }
         }
         return spamScore > hamScore;
+    }
+
+    public Map<String, Double> getspamProbabilities() {
+        return spamProbabilities;
+    }
+
+    public int getNonSpamCount() {
+        return nonSpamCount;
+    }
+
+    public Map<String, Double> getNonSpamProbabilities() {
+        return nonSpamProbabilities;
     }
 }
