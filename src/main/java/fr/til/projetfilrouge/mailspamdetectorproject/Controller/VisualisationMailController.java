@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListCell;
@@ -12,6 +13,7 @@ import javafx.scene.control.ListView;
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -20,6 +22,8 @@ public class VisualisationMailController {
     @FXML
     private Button update;
     private Message[] listeMessages;
+    private ControllerBayesian controller;
+
 
     public VisualisationMailController() {
        this.listeMessages = this.getListeMessages();
@@ -84,9 +88,11 @@ public class VisualisationMailController {
 
                 if (empty || message == null) {
                     setText(null);
+
                 } else {
                     try {
                         setText(message.getSubject());
+
                     } catch (MessagingException e) {
                         throw new RuntimeException(e);
                     }
@@ -113,19 +119,46 @@ public class VisualisationMailController {
      * @author Julien ADAMI
      * @param actionEvent
      */
-    public void onClickUpdate(ActionEvent actionEvent) {
+    public void onClickUpdate(ActionEvent actionEvent) throws MessagingException, IOException {
         System.out.println("update");
+        controller = new ControllerBayesian();
+        String spamFolder = "src/main/resources/file/SPAM";
+        String noSpamFolder = "src/main/resources/file/HAM";
+        List<Message> listeMessagesSpam = new ArrayList<>();
+        List<Message> listeMessagesNonSpam = new ArrayList<>();
+
+
+        controller.train(spamFolder, noSpamFolder);
         this.listeMessages = this.getListeMessages();
-        setSpamList(Arrays.stream(this.listeMessages).toList(), nonSpamListView);
+        for(Message message : this.listeMessages){
+            String messageTexte = ConnexionController.getBodyMessage(message);
+
+            if(controller.isSpam(message.getSubject()+" "+messageTexte)){
+                spamListView.getItems().add(message);
+                listeMessagesSpam.add(message);
+
+            }else {
+                nonSpamListView.getItems().add(message);
+                listeMessagesNonSpam.add(message);
+
+
+            }
+        }
+        setSpamList(listeMessagesNonSpam, nonSpamListView);
+        setSpamList(listeMessagesSpam, spamListView);
         setOnMouseClickedExtract(nonSpamListView);
         setOnMouseClickedExtract(spamListView);
+        
+        System.out.println("spam : "+listeMessagesSpam.size());
+        System.out.println("non spam : "+listeMessagesNonSpam.size());
+
 
     }
 
-    public void setOnMouseClickedExtract(ListView<Message> nonSpamListView) {
-        nonSpamListView.setOnMouseClicked(event -> {
+    public void setOnMouseClickedExtract(ListView<Message> basicListView) {
+        basicListView.setOnMouseClicked(event -> {
             if (event.getClickCount() == 2) {
-                Message message = nonSpamListView.getSelectionModel().getSelectedItem();
+                Message message = basicListView.getSelectionModel().getSelectedItem();
                 if (message != null) {
                     try {
                         String content = message.getContent().toString();

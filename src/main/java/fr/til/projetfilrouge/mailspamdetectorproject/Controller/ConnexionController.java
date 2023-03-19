@@ -131,6 +131,47 @@ public class ConnexionController {
         return messages;
     }
 
+    // fonction qui sort en retour une liste de string et en entrée un tableau de message
+    public static String[] getBodyMessage(Message[] messages) throws MessagingException, IOException {
+        String[] bodyMessage = new String[messages.length];
+        for (int i = 0; i < messages.length; i++) {
+            Object content = messages[i].getContent();
+            if (content instanceof String) {
+                bodyMessage[i] = (String) content;
+            } else if (content instanceof Multipart) {
+                Multipart multipart = (Multipart) content;
+                for (int j = 0; j < multipart.getCount(); j++) {
+                    BodyPart bodyPart = multipart.getBodyPart(j);
+                    if (bodyPart.isMimeType("text/plain")) {
+                        bodyMessage[i] = (String) bodyPart.getContent();
+                        break;
+                    }
+                }
+            }
+        }
+        return bodyMessage;
+    }
+
+    // fonction statique qui sort en retour string et en entrée  message
+    public static String getBodyMessage(Message message) throws MessagingException, IOException {
+        String bodyMessage = "";
+        Object content = message.getContent();
+        if (content instanceof String) {
+            bodyMessage = (String) content;
+        } else if (content instanceof Multipart) {
+            Multipart multipart = (Multipart) content;
+            for (int j = 0; j < multipart.getCount(); j++) {
+                BodyPart bodyPart = multipart.getBodyPart(j);
+                if (bodyPart.isMimeType("text/plain")) {
+                    bodyMessage = (String) bodyPart.getContent();
+                    break;
+                }
+            }
+        }
+        return bodyMessage;
+    }
+
+
     public void setUserModel(UserModel userModel) {
         this.userModel = userModel;
     }

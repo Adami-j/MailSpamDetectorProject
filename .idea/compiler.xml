@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="MailSpamDetectorProject" target="19" />
+      <module name="MailSpamDetectorProject" target="0" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
