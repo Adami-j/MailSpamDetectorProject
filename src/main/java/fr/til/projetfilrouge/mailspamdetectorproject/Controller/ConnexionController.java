@@ -2,9 +2,11 @@ package fr.til.projetfilrouge.mailspamdetectorproject.Controller;
 
 import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModel;
 
-import java.io.IOException;
+import java.io.*;
 import java.util.Properties;
 import javax.mail.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 
 
 public class ConnexionController {
@@ -134,6 +136,109 @@ public class ConnexionController {
     public void setUserModel(UserModel userModel) {
         this.userModel = userModel;
     }
-    
+    /**
+     * Envoie un mail en utilisant JavaMail.
+     *
+     * @param from l'adresse e-mail de l'expéditeur
+     * @param to l'adresse e-mail du destinataire
+     * @param subject le sujet du mail
+     * @param content le contenu du mail
+     * @throws MessagingException en cas d'erreur lors de l'envoi du mail
+     */
+    public void sendMail(String from, String to, String subject, String content) throws MessagingException, IOException {
+        // Configuration des propriétés de la session
+        Properties properties = new Properties();
+        properties.setProperty("mail.transport.protocol", "smtp");
+        properties.setProperty("mail.smtp.host", "outlook.office365.com");
+        properties.setProperty("mail.smtp.port", "587");
+        properties.setProperty("mail.smtp.auth", "true");
+        properties.setProperty("mail.smtp.starttls.enable", "true");
 
+        // Création de la session
+        Session session = Session.getDefaultInstance(properties);
+
+        // Création du message
+        Message message = new MimeMessage(session);
+        message.setFrom(new InternetAddress(from));
+        message.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
+        message.setSubject(subject + " of : " + this.readNbMailSent());
+        message.setText(content+ " of : " + this.readNbMailSent());
+
+        // Envoi du message
+        Transport transport = session.getTransport();
+        transport.connect(userModel.getLogin(), userModel.getPassword());
+        transport.sendMessage(message, message.getAllRecipients());
+        transport.close();
+    }
+
+    private static final String FILENAME = "src/main/java/fr/til/projetfilrouge/mailspamdetectorproject/Controller/nbMailSend.txt";
+    /**
+     * Increments the number of mails sent by one
+     */
+    public static void incrementNbMailSent() throws IOException {
+        // Read current count
+        int currentCount = readNbMailSent();
+
+        // Increment count and write to file
+        writeNbMailSent(currentCount + 1);
+    }
+
+    /**
+     * Decrements the number of mails sent by one
+     */
+    public static void decrementNbMailSent() throws IOException {
+        // Read current count
+        int currentCount = readNbMailSent();
+
+        // Decrement count and write to file
+        writeNbMailSent(currentCount - 1);
+    }
+
+    /**
+     * Reads the current number of mails sent from the file
+     */
+    public  static int readNbMailSent() throws IOException {
+        File file = new File(FILENAME);
+        if (!file.exists()) {
+            // If the file does not exist, assume that the number of mails sent is zero
+            return 0;
+        }
+
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String line = br.readLine();
+            if (line != null) {
+                return Integer.parseInt(line);
+            } else {
+                // If the file is empty, assume that the number of mails sent is zero
+                return 0;
+            }
+        }
+    }
+
+    /**
+     * Writes the given number of mails sent to the file
+     */
+    private static void writeNbMailSent(int count) throws IOException {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILENAME))) {
+            bw.write(Integer.toString(count));
+        }
+    }
+
+
+    public  boolean isSubjectInInbox(String subject) {
+        try {
+            // Récupération des messages de la boîte de réception
+            Message[] messages = getMessageInbox();
+
+            // Vérification de la présence du sujet dans chaque message
+            for (Message message : messages) {
+                if (message.getSubject().equals(subject)) {
+                    return true;
+                }
+            }
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 }
