@@ -120,7 +120,7 @@ public class ConnectVueController {
         visualisationMailController.setListeMessages(messages);
         Stage secondStage = new Stage();
         StackPane rootParent = new StackPane();
-        Scene scene = new Scene(root, 600, 600);
+        Scene scene = new Scene(root, 600, 500);
         secondStage.setScene(scene);
         secondStage.show();
 
