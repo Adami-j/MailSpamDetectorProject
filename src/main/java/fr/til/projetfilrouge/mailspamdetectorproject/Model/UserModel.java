@@ -1,45 +1,37 @@
 package fr.til.projetfilrouge.mailspamdetectorproject.Model;
 
-public class UserModel {
+public class UserModel implements UserModelInterface {
     /**
      * Paramètre initialisé à null lors de la création de l'instance  de la classe UserModel
+     *@author Nicolas PAIVA
+     *@author Julien ADAMI
      */
-    private static UserModel userInstance = null;
+    static UserModel userInstance = null;
 
     private String login;
     private String password;
 
 
-    private UserModel(){
+    UserModel(){
 
     }
 
-    /**
-     * Méthode qui retourne l'instance synchronisée d'un user
-     * Permet de s'affranchir de la déclaration d'un constructeur
-     * lors de la déclaration de la classe
-     * @author Julien ADAMI
-     * @return UserModel
-     */
-    public static synchronized UserModel getInstance() {
-        if(userInstance==null){
-            userInstance = new UserModel();
-        }
-        return userInstance;
-    }
-
+    @Override
     public String getLogin() {
         return login;
     }
 
+    @Override
     public void setLogin(String login) {
         this.login = login;
     }
 
+    @Override
     public String getPassword() {
         return password;
     }
 
+    @Override
     public void setPassword(String password) {
         this.password = password;
     }
