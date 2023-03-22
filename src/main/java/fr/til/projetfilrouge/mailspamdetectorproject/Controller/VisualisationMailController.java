@@ -5,10 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.chart.PieChart;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListCell;
-import javafx.scene.control.ListView;
+import javafx.scene.control.*;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -23,6 +20,17 @@ public class VisualisationMailController {
     private Button update;
     private Message[] listeMessages;
     private ControllerBayesian controller;
+
+    @FXML
+    private Label nbNonSpam;
+    @FXML
+    private Label nbSpam;
+
+    @FXML
+    private Label proucentageNonSpam;
+    @FXML
+    private Label proucentageSpam;
+
 
 
     public VisualisationMailController() {
@@ -151,6 +159,15 @@ public class VisualisationMailController {
 
         System.out.println("spam : "+listeMessagesSpam.size());
         System.out.println("non spam : "+listeMessagesNonSpam.size());
+
+        nbNonSpam.setText("Non spam : "+listeMessagesNonSpam.size());
+        nbSpam.setText("Spam : "+listeMessagesSpam.size());
+
+        double pourcentageSpam = ((double)listeMessagesSpam.size() / (listeMessagesNonSpam.size() + listeMessagesSpam.size())) * 100;
+        proucentageSpam.setText(String.format("%.2f", pourcentageSpam)+" % ");
+
+        double pourcentageNonSpam = ((double)listeMessagesNonSpam.size() / (listeMessagesNonSpam.size() + listeMessagesSpam.size())) * 100;
+        proucentageNonSpam.setText(String.format("%.2f", pourcentageNonSpam)+" % ");
 
 
     }
