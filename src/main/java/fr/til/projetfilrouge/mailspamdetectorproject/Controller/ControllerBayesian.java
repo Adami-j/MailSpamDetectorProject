@@ -55,13 +55,7 @@ public class ControllerBayesian {
 
             for (String line : lines) {
                 String[] words = line.split("\\s+");
-                for (String word : words) {
-                    if (spamWordCounts.containsKey(word)) {
-                        spamWordCounts.put(word, spamWordCounts.get(word) + 1);
-                    } else {
-                        spamWordCounts.put(word, 1);
-                    }
-                }
+                countWord(words, spamWordCounts);
             }
         }
 
@@ -76,13 +70,7 @@ public class ControllerBayesian {
 
             for (String line : lines) {
                 String[] words = line.split("\\s+");
-                for (String word : words) {
-                    if (nonSpamWordCounts.containsKey(word)) {
-                        nonSpamWordCounts.put(word, nonSpamWordCounts.get(word) + 1);
-                    } else {
-                        nonSpamWordCounts.put(word, 1);
-                    }
-                }
+                countWord(words, nonSpamWordCounts);
             }
         }
 
@@ -101,7 +89,7 @@ public class ControllerBayesian {
     }
 
     /**
-     * @Author Mateo Isabey
+     * @AAuthor Mateo Isabey
      * Verification si le mail est un spam
      * @param message
      * @return
@@ -136,4 +124,22 @@ public class ControllerBayesian {
     public Map<String, Double> getNonSpamProbabilities() {
         return nonSpamProbabilities;
     }
+
+
+    /**
+     * @Autors Mateo Isabey
+     * Methode pour ajouter les mots un par un par un dans la map Ham ou Spam
+     * @param words
+     * @param WordCounts
+     */
+    private void countWord(String[] words, Map<String, Integer> WordCounts) {
+        for (String word : words) {
+            if (WordCounts.containsKey(word)) {
+                WordCounts.put(word, WordCounts.get(word) + 1);
+            } else {
+                WordCounts.put(word, 1);
+            }
+        }
+    }
+
 }
