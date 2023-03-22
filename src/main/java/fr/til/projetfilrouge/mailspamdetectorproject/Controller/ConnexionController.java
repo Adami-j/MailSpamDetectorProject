@@ -47,40 +47,6 @@
             store = session.getStore();
             store.connect(userModel.getLogin(), userModel.getPassword());
 
-
-            //récupération des emails courrants
-            Folder inbox = store.getFolder("INBOX");
-            inbox.open(Folder.READ_ONLY);
-            Message[] messages = inbox.getMessages();
-            for (Message m : messages){
-                Object content = null;
-                try {
-                    content = m.getContent();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-
-                if (content instanceof String) {
-                    System.out.println("Body: " + (String) content);
-                } else if (content instanceof Multipart) {
-                    Multipart multipart = (Multipart) content;
-                    for (int i = 0; i < multipart.getCount(); i++) {
-                        BodyPart bodyPart = multipart.getBodyPart(i);
-                        if (bodyPart.isMimeType("text/plain")) {
-                            try {
-                                System.out.println("Body is : " + bodyPart.getContent());
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
-                            break;
-                        }
-                    }
-                }
-            }
-            // Fermeture de la boîte de réception et de la connexion
-
-
         }
 
         /**
