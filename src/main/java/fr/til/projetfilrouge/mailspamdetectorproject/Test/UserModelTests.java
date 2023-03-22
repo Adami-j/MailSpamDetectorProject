@@ -1,6 +1,7 @@
 package fr.til.projetfilrouge.mailspamdetectorproject.Test;
 
 import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModel;
+import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModelInterface;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -11,40 +12,41 @@ public class UserModelTests {
 
     @Test
     public void testInstanceNonNulle(){
-       UserModel userModel = UserModel.getInstance();
+       UserModelInterface userModel = UserModelInterface.getInstance();
        assertNotEquals(userModel,null);
     }
 
     @Test
     public void testInstanceNulle(){
-        UserModel userModel = null;
-        assertEquals(userModel,null);
+        UserModelInterface userModel = null;
+        userModel = UserModelInterface.getInstance();
+        assertNotEquals(userModel,null);
     }
 
     @Test
     public void testInstanceNulleNonNulle(){
-        UserModel userModel = null;
-        userModel = UserModel.getInstance();
+        UserModelInterface userModel = null;
+        userModel = UserModelInterface.getInstance();
         assertNotEquals(userModel,null);
     }
 
     @Test
     public void testLoginCorrect(){
-        UserModel userModel = UserModel.getInstance();
+        UserModelInterface userModel = UserModelInterface.getInstance();
         userModel.setLogin("Coucou");
         assertEquals(userModel.getLogin(),"Coucou");
     }
 
     @Test
     public void testLoginVide(){
-        UserModel userModel = UserModel.getInstance();
+        UserModelInterface userModel = UserModelInterface.getInstance();
         userModel.setLogin("");
         assertEquals(userModel.getLogin(),"");
     }
 
     @Test
     public void testPasswordCorrect()  {
-        UserModel userModel = UserModel.getInstance();
+        UserModelInterface userModel = UserModelInterface.getInstance();
         userModel.setPassword("Coucou");
         assertEquals(userModel.getPassword(),"Coucou");
 
