@@ -164,7 +164,7 @@ public class VisualisationMailController {
         nbSpam.setText("Spam : "+listeMessagesSpam.size());
 
         double pourcentageSpam = ((double)listeMessagesSpam.size() / (listeMessagesNonSpam.size() + listeMessagesSpam.size())) * 100;
-        proucentageSpam.setText(String.format("%.2f", pourcentageSpam)+" % ");
+        proucentageSpam.setText(String.format("%.2f", pourcentageSpam)+" %");
 
         double pourcentageNonSpam = ((double)listeMessagesNonSpam.size() / (listeMessagesNonSpam.size() + listeMessagesSpam.size())) * 100;
         proucentageNonSpam.setText(String.format("%.2f", pourcentageNonSpam)+" % ");
