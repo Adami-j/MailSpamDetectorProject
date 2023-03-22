@@ -2,6 +2,7 @@ package fr.til.projetfilrouge.mailspamdetectorproject.Test;
 
 import fr.til.projetfilrouge.mailspamdetectorproject.Controller.ConnexionController;
 import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModel;
+import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModelInterface;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,21 +18,21 @@ public class ConnexionControllerTest {
     @Test
     public void testConnexionControllerTest() throws MessagingException {
        assertEquals(1,1);
-        UserModel userModel = UserModel.getInstance();
+        UserModelInterface userModel = UserModelInterface.getInstance();
         userModel.setLogin("equipedetectorspmtest@outlook.fr");
         userModel.setPassword("SpamTestBaiern12..");
         System.out.println(userModel.getLogin()+userModel.getPassword());
 
-        ConnexionController connexionController = ConnexionController.getInstance(userModel);
+        ConnexionController connexionController = ConnexionController.getInstance((UserModel) userModel);
     }
 
     @Test
     public void testReceiveMessage() throws MessagingException, IOException {
-        UserModel userModel = UserModel.getInstance();
+        UserModelInterface userModel = UserModelInterface.getInstance();
         userModel.setLogin("equipedetectorspmtest@outlook.fr");
         userModel.setPassword("SpamTestBaiern12..");
         System.out.println(userModel.getLogin()+userModel.getPassword());
-        ConnexionController connexionController = ConnexionController.getInstance(userModel);
+        ConnexionController connexionController = ConnexionController.getInstance((UserModel) userModel);
 
         connexionController.sendMail("equipedetectorspmtest@outlook.fr", "equipedetectorspmtest@outlook.fr", "test ", "test ");
         int b = connexionController.readNbMailSent() -1;
@@ -54,10 +55,10 @@ public class ConnexionControllerTest {
 
     @Before
     public  void setUp() throws Exception {
-        UserModel userModel = UserModel.getInstance();
+        UserModelInterface userModel = UserModelInterface.getInstance();
         userModel.setLogin("equipedetectorspmtest@outlook.fr");
         userModel.setPassword("SpamTestBaiern12..");
-        connexionController = ConnexionController.getInstance(userModel);
+        connexionController = ConnexionController.getInstance((UserModel) userModel);
     }
 
     @Test
