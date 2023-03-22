@@ -9,6 +9,7 @@ public interface UserModelInterface {
      *
      * @return UserModel
      * @author Julien ADAMI
+     * @author Nicolas PAIVA
      */
     static UserModel getInstance() {
         if (userInstance == null) {
