@@ -6,6 +6,7 @@ package fr.til.projetfilrouge.mailspamdetectorproject.View;
         import fr.til.projetfilrouge.mailspamdetectorproject.Controller.VisualisationMailController;
         import fr.til.projetfilrouge.mailspamdetectorproject.HelloApplication;
         import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModel;
+        import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModelInterface;
         import javafx.event.ActionEvent;
         import javafx.fxml.FXML;
         import javafx.fxml.FXMLLoader;
@@ -89,11 +90,11 @@ public class ConnectVueController {
         login = "equipedetectorspmtest@outlook.fr";
         password="SpamTestBaiern12..";
         System.out.println(login+password);
-        UserModel userModel = UserModel.getInstance();
+        UserModelInterface userModel = UserModelInterface.getInstance();
         userModel.setLogin(login);
         userModel.setPassword(password);
         try {
-            ConnexionController connexionController = ConnexionController.getInstance(userModel);
+            ConnexionController connexionController = ConnexionController.getInstance((UserModel) userModel);
 
             ouverturePageVisualisationMail(connexionController.getMessageInbox());
         } catch (MessagingException | IOException e) {
