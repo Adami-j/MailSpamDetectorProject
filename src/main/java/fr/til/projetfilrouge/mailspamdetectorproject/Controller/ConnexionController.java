@@ -16,7 +16,7 @@
         private Session session;
         private Store store;
 
-        private static int counter ;
+        private int counter ;
         /**
          *Creation d'un type properties, ajout des propriétés suivantes : protocole : imap
          * l'hote outlook
@@ -38,6 +38,7 @@
 
             //création de l'authentification, en utilisant les paramètres de l'utilisateur
             Authenticator authentificator = new Authenticator() {
+                @Override
                 protected PasswordAuthentication getPasswordAuthentication() {
                     return new PasswordAuthentication(userModel.getLogin(), userModel.getPassword());
                 }
@@ -94,8 +95,8 @@
                 Folder inbox = store.getFolder("INBOX");
                 inbox.open(Folder.READ_ONLY);
                 messages = inbox.getMessages();
-            }catch(Exception e){
-                System.out.println("error "+ e );
+            }catch(MessagingException e){
+               throw new MessagingException("Erreur lors de la récupération des messages");
             }
             // Fermeture de la boîte de réception et de la connexion
 
@@ -125,17 +126,17 @@
             properties.setProperty("mail.smtp.starttls.enable", "true");
 
             // Création de la session
-            Session session = Session.getDefaultInstance(properties);
+            this.session = Session.getDefaultInstance(properties);
 
             // Création du message
-            Message message = new MimeMessage(session);
+            Message message = new MimeMessage(this.session);
             message.setFrom(new InternetAddress(from));
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
             message.setSubject(subject + " of : " + this.readNbMailSent());
             message.setText(content+ " of : " + this.readNbMailSent());
 
             // Envoi du message
-            Transport transport = session.getTransport();
+            Transport transport = this.session.getTransport();
             transport.connect(userModel.getLogin(), userModel.getPassword());
             transport.sendMessage(message, message.getAllRecipients());
             transport.close();
@@ -146,9 +147,9 @@
         /**
          * Increments the number of mails sent by one
          */
-        public static void incrementNbMailSent() throws IOException {
+        public void incrementNbMailSent() throws IOException {
             // Read current count
-            int currentCount = readNbMailSent();
+            int currentCount = this.readNbMailSent();
 
             // Increment count and write to file
             writeNbMailSent(currentCount + 1);
@@ -157,9 +158,9 @@
         /**
          * Decrements the number of mails sent by one
          */
-        public static void decrementNbMailSent() throws IOException {
+        public void decrementNbMailSent() throws IOException {
             // Read current count
-            int currentCount = readNbMailSent();
+            int currentCount = this.readNbMailSent();
 
             // Decrement count and write to file
             writeNbMailSent(currentCount - 1);
@@ -169,8 +170,7 @@
         /**
          * Reads the current number of mails sent from the file
          */
-        public  static int readNbMailSent() throws IOException {
-            System.out.println("read ");
+        public int readNbMailSent() throws IOException {
             File file = new File(FILENAME);
             if (!file.exists()) {
                 // If the file does not exist, assume that the number of mails sent is zero
@@ -181,8 +181,7 @@
                 String line = br.readLine();
                 if (line != null) {
                     int r = Integer.parseInt(line);
-                    counter = r;
-                    System.out.println("read "+counter);
+                    this.counter = r;
                     return r;
 
                 } else {
@@ -198,8 +197,6 @@
         private static void writeNbMailSent(int count) throws IOException {
             try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILENAME))) {
                 bw.write(Integer.toString(count));
-                System.out.println("write "+ count );
-                bw.close();
             }
         }
 
@@ -262,8 +259,7 @@
         }
 
 
-        public static int getCounter() throws IOException {
-
+        public int getCounter() throws IOException {
                 readNbMailSent();
             return counter;
         }
