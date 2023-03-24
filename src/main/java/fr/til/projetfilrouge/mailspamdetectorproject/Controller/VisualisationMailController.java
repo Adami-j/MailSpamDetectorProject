@@ -2,16 +2,15 @@ package fr.til.projetfilrouge.mailspamdetectorproject.Controller;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
+
 import javafx.fxml.FXML;
-import javafx.scene.chart.PieChart;
+
 import javafx.scene.control.*;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class VisualisationMailController {
@@ -19,7 +18,6 @@ public class VisualisationMailController {
     @FXML
     private Button update;
     private Message[] listeMessages;
-    private ControllerBayesian controller;
 
     @FXML
     private Label nbNonSpam;
@@ -47,9 +45,9 @@ public class VisualisationMailController {
     /**
      * @Author Julien ADAMI
      * fonction qui déplace le mail sélectionné de la liste des mails spam à la liste des mails de non spam
-     * @param actionEvent
+     *
      */
-    public void moveToNonSpam(ActionEvent actionEvent) {
+    public void moveToNonSpam() {
 
         ObservableList<Message> selectedMessages = spamListView.getSelectionModel().getSelectedItems();
 
@@ -65,9 +63,9 @@ public class VisualisationMailController {
     /**
      * @Author Julien ADAMI
      * fonction qui déplace le mail sélectionné de la liste des mails non spam à la liste des mails de spam
-     * @param actionEvent
+     *
      */
-    public void moveToSpam(ActionEvent actionEvent) {
+    public void moveToSpam() {
         ObservableList<Message> selectedMessages = nonSpamListView.getSelectionModel().getSelectedItems();
 
         // Ajouter les mails sélectionnés à la liste des mails de spam
@@ -102,7 +100,7 @@ public class VisualisationMailController {
                         setText(message.getSubject());
 
                     } catch (MessagingException e) {
-                        throw new RuntimeException(e);
+                        throw new RuntimeException("Problème lors de l'affichage de la liste des mails");
                     }
                 }
             }
@@ -125,40 +123,33 @@ public class VisualisationMailController {
      * Affiche le contenu du mail sélectionné dans une fenetre d'alerte informative
      * en doublecliquant sur une des deux listes spam ou non spam
      * @author Julien ADAMI
-     * @param actionEvent
      */
-    public void onClickUpdate(ActionEvent actionEvent) throws MessagingException, IOException {
-        System.out.println("update");
-        controller = new ControllerBayesian();
+    public void onClickUpdate() throws MessagingException, IOException {
+        ControllerBayesian controllerBayesian;
+        controllerBayesian = new ControllerBayesian();
         String spamFolder = "src/main/resources/file/SPAM";
         String noSpamFolder = "src/main/resources/file/HAM";
         List<Message> listeMessagesSpam = new ArrayList<>();
         List<Message> listeMessagesNonSpam = new ArrayList<>();
 
-
-        controller.train(spamFolder, noSpamFolder);
+        controllerBayesian.train(spamFolder, noSpamFolder);
         this.listeMessages = this.getListeMessages();
         for(Message message : this.listeMessages){
             String messageTexte = ConnexionController.getBodyMessage(message);
 
-            if(controller.isSpam(message.getSubject()+" "+messageTexte)){
+            if(controllerBayesian.isSpam(message.getSubject()+" "+messageTexte)){
                 spamListView.getItems().add(message);
                 listeMessagesSpam.add(message);
 
             }else {
                 nonSpamListView.getItems().add(message);
                 listeMessagesNonSpam.add(message);
-
-
             }
         }
         setSpamList(listeMessagesNonSpam, nonSpamListView);
         setSpamList(listeMessagesSpam, spamListView);
         setOnMouseClickedExtract(nonSpamListView);
         setOnMouseClickedExtract(spamListView);
-
-        System.out.println("spam : "+listeMessagesSpam.size());
-        System.out.println("non spam : "+listeMessagesNonSpam.size());
 
         nbNonSpam.setText("Non spam : "+listeMessagesNonSpam.size());
         nbSpam.setText("Spam : "+listeMessagesSpam.size());
