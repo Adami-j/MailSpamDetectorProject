@@ -7,13 +7,12 @@ package fr.til.projetfilrouge.mailspamdetectorproject.View;
         import fr.til.projetfilrouge.mailspamdetectorproject.HelloApplication;
         import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModel;
         import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModelInterface;
-        import javafx.event.ActionEvent;
+
         import javafx.fxml.FXML;
         import javafx.fxml.FXMLLoader;
         import javafx.scene.Parent;
         import javafx.scene.Scene;
         import javafx.scene.control.*;
-        import javafx.scene.layout.StackPane;
         import javafx.stage.DirectoryChooser;
         import javafx.stage.Stage;
 
@@ -52,26 +51,11 @@ public class ConnectVueController {
     private Stage primaryStage;
 
     /**
-     * Initialise la vue de connexion.
-     * Cette méthode est appelée automatiquement par JavaFX lors du chargement de la vue.
-     */
-    @FXML
-    private void initialize() {
-        /*try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("connect-vue.fxml"));
-            loader.setController(this);
-            AnchorPane pane = loader.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-    }
-    /**
      * Réinitialise les champs d'identification.
      * Cette méthode est appelée lorsque l'utilisateur appuie sur le bouton "Réinitialiser".
      */
     @FXML
     public  void resetFields() {
-        System.out.println("reset");
         usernameField.setText("");
         passwordField.setText("");
     }
@@ -86,10 +70,6 @@ public class ConnectVueController {
 
         String login = usernameField.getText();
         String password = passwordField.getText();
-        //paramètres pour test
-        login = "equipedetectorspmtest@outlook.fr";
-        password="SpamTestBaiern12..";
-        System.out.println(login+password);
         UserModelInterface userModel = UserModelInterface.getInstance();
         userModel.setLogin(login);
         userModel.setPassword(password);
@@ -119,7 +99,6 @@ public class ConnectVueController {
         VisualisationMailController visualisationMailController = fxmlLoader.getController();
         visualisationMailController.setListeMessages(messages);
         Stage secondStage = new Stage();
-        StackPane rootParent = new StackPane();
         Scene scene = new Scene(root, 600, 500);
         secondStage.setScene(scene);
         secondStage.show();
@@ -131,7 +110,7 @@ public class ConnectVueController {
         this.primaryStage = primaryStage;
     }
 
-    public void selectFile(ActionEvent actionEvent) {
+    public void selectFile() {
         DirectoryChooser directoryChooser = new DirectoryChooser();
         File selectedDirectory = directoryChooser.showDialog(new Stage());
         if (selectedDirectory != null) {
@@ -143,11 +122,10 @@ public class ConnectVueController {
      * @author Julien ADAMI
      * fonction qui s'active lors du click sur le bouton "valider", elle permet de récupérer les fichiers txt d'un dossier
      * et de les convertir en messages en les transmettant à la vue de visualisation des mails
-     * @param actionEvent
      * @throws IOException
      * @throws MessagingException
      */
-    public void fileConnection(ActionEvent actionEvent) throws IOException, MessagingException {
+    public void fileConnection() throws IOException, MessagingException {
         if(selectedDirectoryLabel == null ||selectedDirectoryLabel.getText() == null ||
                 getFilesFromDirectory(new File(selectedDirectoryLabel.getText())) ==null ||  getFilesFromDirectory(new File(selectedDirectoryLabel.getText())).length < 1) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -157,7 +135,7 @@ public class ConnectVueController {
             File[] textFiles = getFilesFromDirectory(new File(selectedDirectoryLabel.getText()));
             List<Message> messages = textFilesToMessages(textFiles);
             Message[] messagesArray = messages.toArray(new Message[0]);
-            System.out.printf("Nombre de messages : %d"+"%n", messagesArray.length);
+
             ouverturePageVisualisationMail(messagesArray);
 
         }
