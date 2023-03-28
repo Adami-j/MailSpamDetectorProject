@@ -93,7 +93,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                fr.til.projetfilrouge.mailspamdetectorproject/fr.til.projetfilrouge.mailspamdetectorproject.HelloApplication
+                                fr.til.projetfilrouge.mailspamdetectorproject/fr.til.projetfilrouge.mailspamdetectorproject.SpamMailDetectorApp
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
