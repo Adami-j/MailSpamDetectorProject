@@ -4,7 +4,7 @@ package fr.til.projetfilrouge.mailspamdetectorproject.View;
 
         import fr.til.projetfilrouge.mailspamdetectorproject.Controller.ConnexionController;
         import fr.til.projetfilrouge.mailspamdetectorproject.Controller.VisualisationMailController;
-        import fr.til.projetfilrouge.mailspamdetectorproject.HelloApplication;
+        import fr.til.projetfilrouge.mailspamdetectorproject.SpamMailDetectorApp;
         import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModel;
         import fr.til.projetfilrouge.mailspamdetectorproject.Model.UserModelInterface;
 
@@ -94,7 +94,7 @@ public class ConnectVueController {
      * et qui ferme la fenêtre de connexion
      */
     public void ouverturePageVisualisationMail(Message[] messages) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("visualisation-mail.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SpamMailDetectorApp.class.getResource("visualisation-mail.fxml"));
         Parent root = fxmlLoader.load();
         VisualisationMailController visualisationMailController = fxmlLoader.getController();
         visualisationMailController.setListeMessages(messages);
