@@ -9,10 +9,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class SpamMailDetectorApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("connect-vue.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SpamMailDetectorApp.class.getResource("connect-vue.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root, 300, 375);
         stage.setResizable(false);
