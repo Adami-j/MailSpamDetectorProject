@@ -200,28 +200,14 @@
             }
         }
 
-        // fonction qui sort en retour une liste de string et en entrée un tableau de message
-        public static String[] getBodyMessage(Message[] messages) throws MessagingException, IOException {
-            String[] bodyMessage = new String[messages.length];
-            for (int i = 0; i < messages.length; i++) {
-                Object content = messages[i].getContent();
-                if (content instanceof String) {
-                    bodyMessage[i] = (String) content;
-                } else if (content instanceof Multipart) {
-                    Multipart multipart = (Multipart) content;
-                    for (int j = 0; j < multipart.getCount(); j++) {
-                        BodyPart bodyPart = multipart.getBodyPart(j);
-                        if (bodyPart.isMimeType("text/plain")) {
-                            bodyMessage[i] = (String) bodyPart.getContent();
-                            break;
-                        }
-                    }
-                }
-            }
-            return bodyMessage;
-        }
-
-        // fonction statique qui sort en retour string et en entrée  message
+        /**
+         * Permet de récupérer le contenu du mail
+         * @author Julien ADAMI
+         * @param message
+         * @return bodyMessage
+         * @throws MessagingException
+         * @throws IOException
+         */
         public static String getBodyMessage(Message message) throws MessagingException, IOException {
             String bodyMessage = "";
             Object content = message.getContent();
@@ -240,7 +226,12 @@
             return bodyMessage;
         }
 
-
+        /**
+         * Renvoie si le mail est présent
+         * @author Julien ADAMI
+         * @param subject
+         * @return boolean
+         */
         public  boolean isSubjectInInbox(String subject) {
             try {
                 // Récupération des messages de la boîte de réception
@@ -263,7 +254,10 @@
                 readNbMailSent();
             return counter;
         }
+
         public void setCounter(int counter){
             this.counter = counter;
         }
+
+
     }

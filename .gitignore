@@ -17,6 +17,7 @@
 MailSpamDetectorProject.iml
 .idea\compiler.
 
+config.properties
 *.xml
 
 *.txt
