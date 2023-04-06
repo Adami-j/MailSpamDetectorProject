@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 
 public class ConnexionControllerTest {
 
-    private Properties getProperties(){
+    private static Properties getProperties(){
         Properties properties = new Properties();
         try (
                 FileInputStream fis = new FileInputStream("src/configuration.properties")) {
@@ -28,8 +28,10 @@ public class ConnexionControllerTest {
         return properties;
     }
 
+
+
     @Before
-    public void setUp() throws IOException, MessagingException {
+    public void setUp() throws  MessagingException {
         Properties properties = getProperties();
         UserModelInterface userModel = UserModelInterface.getInstance();
         userModel.setLogin(properties.getProperty("email"));
@@ -39,23 +41,29 @@ public class ConnexionControllerTest {
 
     }
 
-
+    /**
+     * Test qui permet d'initialiser la connexion
+     * en récupérant le fichier de configuration
+     * @throws MessagingException
+     */
     @Test
     public void testConnexionControllerTest() throws MessagingException {
        assertEquals(1,1);
         UserModelInterface userModel = UserModelInterface.getInstance();
 
-        ConnexionController connexionController = ConnexionController.getInstance((UserModel) userModel);
+         connexionController = ConnexionController.getInstance((UserModel) userModel);
     }
 
+    /**
+     * Test qui check l'envoie et la réception
+     * d'un mail
+     * @throws MessagingException
+     */
     @Test
     public void testReceiveMessage() throws MessagingException, IOException {
         UserModelInterface userModel = UserModelInterface.getInstance();
-
-
-        ConnexionController connexionController = ConnexionController.getInstance((UserModel) userModel);
-
-        connexionController.sendMail("equipedetectorspmtest@outlook.fr", "equipedetectorspmtest@outlook.fr", "test ", "test ");
+        String test = "test";
+        connexionController.sendMail(userModel.getPassword(), userModel.getLogin(), test, test);
         int b = connexionController.readNbMailSent() -1;
 
         try {
@@ -64,29 +72,42 @@ public class ConnexionControllerTest {
             // Gestion de l'exception
         }
 
-        //connexionController.decrementNbMailSent();
-        boolean a = connexionController.isSubjectInInbox("test "+ " of : " + b);
+
+        boolean a = connexionController.isSubjectInInbox(test+ " of : " + b);
 
 
         assertTrue(a);
     }
 
 
-    public static ConnexionController connexionController;
+    private static ConnexionController connexionController;
 
+    /**
+     * Tests de récupération d'une instance de connexion controller
+     * @throws MessagingException
+     */
     @Test
     public void testGetInstance() throws MessagingException {
         ConnexionController connexionController2 = ConnexionController.getInstance(connexionController.getUserModel());
         assertEquals(connexionController, connexionController2);
     }
 
+    /**
+     * Teste si la liste des messanges dans la messagerie n'est pas nulle
+     * @throws MessagingException
+     */
     @Test
-    public void testGetMessageInbox() throws Exception {
+    public void testGetMessageInbox() throws MessagingException {
         assertNotNull(connexionController.getMessageInbox());
     }
 
+    /**
+     * Test de l'incrémentation du compteur de mails envoyés
+     * en gérant l'exception
+     * @throws IOException
+     */
     @Test
-    public void testIncrementCounter() throws MessagingException, IOException {
+    public void testIncrementCounter() throws IOException {
         int counter = connexionController.getCounter();
         connexionController.incrementNbMailSent();
         try {
@@ -95,21 +116,24 @@ public class ConnexionControllerTest {
             // Gestion de l'exception
         }
         int counterNow = connexionController.getCounter();
-
-        assertEquals(counter + 1, counterNow);
+        counter++;
+        assertEquals(counter, counterNow);
         connexionController.decrementNbMailSent();
     }
 
+
     @Test
-    public void testDecrementCounter() throws MessagingException, IOException {
+    public void testDecrementCounter() throws IOException {
         int counter = connexionController.getCounter();
         connexionController.decrementNbMailSent();
         try {
             TimeUnit.SECONDS.sleep(5); // Pause de 5 secondes
         } catch (InterruptedException e) {
             // Gestion de l'exception
+
         }
-        assertEquals(counter -1, connexionController.getCounter());
+        counter--;
+        assertEquals(counter, connexionController.getCounter());
         connexionController.incrementNbMailSent();
     }
 }
