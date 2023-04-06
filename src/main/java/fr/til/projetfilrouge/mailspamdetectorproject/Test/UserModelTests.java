@@ -26,7 +26,9 @@ public class UserModelTests {
     }
 
 
-
+    /**
+     * Ce test permet de vérifier la connexion avec un
+     */
     @Test
     public void testLoginCorrect(){
         userModel = UserModelInterface.getInstance();
