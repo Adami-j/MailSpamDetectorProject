@@ -10,12 +10,12 @@ import static org.junit.Assert.assertTrue;
 public class ControllerBayesianTest {
 
     private ControllerBayesian controller;
+    private String spamFolder = "src/main/resources/file/SPAM";
+    private String noSpamFolder = "src/main/resources/file/HAM";
 
     @Before
     public void setup() {
         controller = new ControllerBayesian();
-        String spamFolder = "src/main/resources/file/SPAM";
-        String noSpamFolder = "src/main/resources/file/HAM";
         try {
             controller.train(spamFolder, noSpamFolder);
         } catch (IOException e) {
@@ -23,20 +23,26 @@ public class ControllerBayesianTest {
         }
     }
 
+    /**
+     * Tests sur des spams hams simples
+     * @throws IOException
+     */
     @Test
     public void testTrain() throws IOException {
-        String spamFolder = "src/main/resources/file/SPAM";
-        String noSpamFolder = "src/main/resources/file/HAM";
+
         controller.train(spamFolder, noSpamFolder);
 
         assertTrue(controller.isSpam("Buy Viagra now!"));
         assertFalse(controller.isSpam("Hello, how are you?"));
     }
 
+    /**
+     *
+     * @throws IOException
+     */
     @Test
     public void testContreExemple() throws IOException {
-        String spamFolder = "src/main/resources/file/SPAM";
-        String noSpamFolder = "src/main/resources/file/HAM";
+
         controller.train(spamFolder, noSpamFolder);
 
         assertTrue(controller.isSpam("Félicitations ! Vous avez été sélectionné pour participer à notre tirage au sort exclusif et tenter de gagner un iPhone 13 tout neuf ! Pour participer, il vous suffit de cliquer sur ce lien : www.participez-au-tirage.com"));
@@ -52,9 +58,9 @@ public class ControllerBayesianTest {
 
     @Test
     public void testTrain_withEmptyFolders_allTimeSup0() throws IOException {
-        String spamFolder = "";
-        String noSpamFolder = "";
-        controller.train(spamFolder, noSpamFolder);
+        String spamFolderVide = "";
+        String noSpamFolderVide = "";
+        controller.train(spamFolderVide, noSpamFolderVide);
 
         assertFalse(controller.getspamProbabilities().isEmpty());
         assertFalse(controller.getNonSpamProbabilities().isEmpty());
@@ -92,24 +98,16 @@ public class ControllerBayesianTest {
 
     @Test
     public void testTrain_withEmptySpamAndNonSpamFolders() throws IOException {
-        String spamFolder = "";
-        String noSpamFolder = "";
-        controller.train(spamFolder, noSpamFolder);
+        String spamFolderVide = "";
+        String noSpamFolderVide = "";
+        controller.train(spamFolderVide, noSpamFolderVide);
         // no exception should be thrown
     }
 
     @Test
     public void testIsSpam_withSpecialCharacters() {
-       // String message = "Are you a spammer? @@@";
         String message ="Viagra is a popular drug ? @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@";
         assertTrue(controller.isSpam(message));
     }
-/*
-    @Test
-    public void testTrain_withNonExistingFolders() throws IOException {
-        String spamFolder = "spam";
-        String noSpamFolder = "non_spam";
-        assertThrows
-        assertThrows(IOException.class, () -> controller.train(spamFolder, noSpamFolder));
-    }*/
+
 }
