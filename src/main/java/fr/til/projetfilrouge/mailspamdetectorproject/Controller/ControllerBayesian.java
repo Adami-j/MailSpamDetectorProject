@@ -49,7 +49,6 @@ public class ControllerBayesian {
             try {
                 lines = Files.readAllLines(file.toPath());
             } catch (IOException e) {
-                System.err.println("Error reading file: " + file.getName() + ". Ignoring this file.");
                 continue;
             }
 
@@ -64,7 +63,6 @@ public class ControllerBayesian {
             try {
                 lines = Files.readAllLines(file.toPath());
             } catch (IOException e) {
-                System.err.println("Error reading file: " + file.getName() + ". Ignoring this file.");
                 continue;
             }
 
